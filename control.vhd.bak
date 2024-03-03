@@ -1,0 +1,68 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity control is
+port(
+		CLK : in std_logic;
+		c : out std_logic;
+		W,R : out std_logic_vector(6 downto 1)
+		);
+end entity control;
+
+architecture beh of control is
+	type states is(S0,S1,S2,S3,S4,S5,S6,S7,S8,S9,S10);
+	signal PS,NS : states := S0;
+begin
+	FF : process(CLK) is
+		begin
+			if(CLK'event and CLK = '1') then
+				PS <= NS;
+			end if;
+		end process FF;
+	
+	FSM : process(PS) is
+		begin
+			case(PS) is
+				when S0 =>
+					W <= "000011"
+					R <= "000000"
+					c <= '1'
+					NS <= S1;
+					
+				when S1=>
+					W <= "001111"
+					R <= "000001"
+					c <= '1'
+					NS <= S1;
+						
+				when S2 =>
+					W <= "011011"
+					R <= "001110"
+					c <= '1'
+					NS <= S1;
+					
+				when S3 =>
+					W <= "000111"
+					R <= "010000"
+					NS <= S1;
+					
+				when S4 =>
+					W <= "110111"
+					R <= "101110"
+					c <= '1'
+					NS <= S1;
+				when S5 =>
+					W <= "100011"
+					R <= "110000"
+					c <= '1'
+					NS <= S1;
+				when S6 =>
+					W <= "000011"
+					R <= "100000"
+					c= '1';
+					NS <= S1;
+			end case;
+		end process FSM;
+end architecture beh;
+
+		

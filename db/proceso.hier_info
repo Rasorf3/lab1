@@ -1,0 +1,4203 @@
+|proceso
+CLK => datapath:datapa.CLK
+CLK => control:con.CLK
+A[0] => datapath:datapa.A[1]
+A[1] => datapath:datapa.A[2]
+A[2] => datapath:datapa.A[3]
+A[3] => datapath:datapa.A[4]
+A[4] => datapath:datapa.A[5]
+A[5] => datapath:datapa.A[6]
+A[6] => datapath:datapa.A[7]
+A[7] => datapath:datapa.A[8]
+A[8] => datapath:datapa.A[9]
+A[9] => datapath:datapa.A[10]
+A[10] => datapath:datapa.A[11]
+A[11] => datapath:datapa.A[12]
+A[12] => datapath:datapa.A[13]
+A[13] => datapath:datapa.A[14]
+A[14] => datapath:datapa.A[15]
+A[15] => datapath:datapa.A[16]
+A[16] => datapath:datapa.A[17]
+A[17] => datapath:datapa.A[18]
+A[18] => datapath:datapa.A[19]
+A[19] => datapath:datapa.A[20]
+A[20] => datapath:datapa.A[21]
+A[21] => datapath:datapa.A[22]
+A[22] => datapath:datapa.A[23]
+A[23] => datapath:datapa.A[24]
+A[24] => datapath:datapa.A[25]
+A[25] => datapath:datapa.A[26]
+A[26] => datapath:datapa.A[27]
+A[27] => datapath:datapa.A[28]
+A[28] => datapath:datapa.A[29]
+A[29] => datapath:datapa.A[30]
+A[30] => datapath:datapa.A[31]
+A[31] => datapath:datapa.A[32]
+B[0] => datapath:datapa.B[1]
+B[1] => datapath:datapa.B[2]
+B[2] => datapath:datapa.B[3]
+B[3] => datapath:datapa.B[4]
+B[4] => datapath:datapa.B[5]
+B[5] => datapath:datapa.B[6]
+B[6] => datapath:datapa.B[7]
+B[7] => datapath:datapa.B[8]
+B[8] => datapath:datapa.B[9]
+B[9] => datapath:datapa.B[10]
+B[10] => datapath:datapa.B[11]
+B[11] => datapath:datapa.B[12]
+B[12] => datapath:datapa.B[13]
+B[13] => datapath:datapa.B[14]
+B[14] => datapath:datapa.B[15]
+B[15] => datapath:datapa.B[16]
+B[16] => datapath:datapa.B[17]
+B[17] => datapath:datapa.B[18]
+B[18] => datapath:datapa.B[19]
+B[19] => datapath:datapa.B[20]
+B[20] => datapath:datapa.B[21]
+B[21] => datapath:datapa.B[22]
+B[22] => datapath:datapa.B[23]
+B[23] => datapath:datapa.B[24]
+B[24] => datapath:datapa.B[25]
+B[25] => datapath:datapa.B[26]
+B[26] => datapath:datapa.B[27]
+B[27] => datapath:datapa.B[28]
+B[28] => datapath:datapa.B[29]
+B[29] => datapath:datapa.B[30]
+B[30] => datapath:datapa.B[31]
+B[31] => datapath:datapa.B[32]
+Z[0] <= datapath:datapa.Z[1]
+Z[1] <= datapath:datapa.Z[2]
+Z[2] <= datapath:datapa.Z[3]
+Z[3] <= datapath:datapa.Z[4]
+Z[4] <= datapath:datapa.Z[5]
+Z[5] <= datapath:datapa.Z[6]
+Z[6] <= datapath:datapa.Z[7]
+Z[7] <= datapath:datapa.Z[8]
+Z[8] <= datapath:datapa.Z[9]
+Z[9] <= datapath:datapa.Z[10]
+Z[10] <= datapath:datapa.Z[11]
+Z[11] <= datapath:datapa.Z[12]
+Z[12] <= datapath:datapa.Z[13]
+Z[13] <= datapath:datapa.Z[14]
+Z[14] <= datapath:datapa.Z[15]
+Z[15] <= datapath:datapa.Z[16]
+Z[16] <= datapath:datapa.Z[17]
+Z[17] <= datapath:datapa.Z[18]
+Z[18] <= datapath:datapa.Z[19]
+Z[19] <= datapath:datapa.Z[20]
+Z[20] <= datapath:datapa.Z[21]
+Z[21] <= datapath:datapa.Z[22]
+Z[22] <= datapath:datapa.Z[23]
+Z[23] <= datapath:datapa.Z[24]
+Z[24] <= datapath:datapa.Z[25]
+Z[25] <= datapath:datapa.Z[26]
+Z[26] <= datapath:datapa.Z[27]
+Z[27] <= datapath:datapa.Z[28]
+Z[28] <= datapath:datapa.Z[29]
+Z[29] <= datapath:datapa.Z[30]
+Z[30] <= datapath:datapa.Z[31]
+Z[31] <= datapath:datapa.Z[32]
+
+
+|proceso|datapath:datapa
+CLK => ff_tri_n:registro1.CLK
+CLK => ff_tri_n:registro2.CLK
+CLK => ff_tri_n:registro3.CLK
+CLK => ff_tri_n:registro4.CLK
+CLK => ff_tri_n:registro5.CLK
+CLK => ff_tri_n:registro6.CLK
+control => sum_res:sumador_restador.control
+W[1] => ff_tri_n:registro1.W
+W[2] => ff_tri_n:registro2.W
+W[3] => ff_tri_n:registro3.W
+W[4] => ff_tri_n:registro4.W
+W[5] => ff_tri_n:registro5.W
+W[6] => ff_tri_n:registro6.W
+R[1] => ff_tri_n:registro1.R
+R[2] => ff_tri_n:registro2.R
+R[3] => ff_tri_n:registro3.R
+R[4] => ff_tri_n:registro4.R
+R[5] => ff_tri_n:registro5.R
+R[6] => ff_tri_n:registro6.R
+A[1] => ff_tri_n:registro1.D[0]
+A[2] => ff_tri_n:registro1.D[1]
+A[3] => ff_tri_n:registro1.D[2]
+A[4] => ff_tri_n:registro1.D[3]
+A[5] => ff_tri_n:registro1.D[4]
+A[6] => ff_tri_n:registro1.D[5]
+A[7] => ff_tri_n:registro1.D[6]
+A[8] => ff_tri_n:registro1.D[7]
+A[9] => ff_tri_n:registro1.D[8]
+A[10] => ff_tri_n:registro1.D[9]
+A[11] => ff_tri_n:registro1.D[10]
+A[12] => ff_tri_n:registro1.D[11]
+A[13] => ff_tri_n:registro1.D[12]
+A[14] => ff_tri_n:registro1.D[13]
+A[15] => ff_tri_n:registro1.D[14]
+A[16] => ff_tri_n:registro1.D[15]
+A[17] => ff_tri_n:registro1.D[16]
+A[18] => ff_tri_n:registro1.D[17]
+A[19] => ff_tri_n:registro1.D[18]
+A[20] => ff_tri_n:registro1.D[19]
+A[21] => ff_tri_n:registro1.D[20]
+A[22] => ff_tri_n:registro1.D[21]
+A[23] => ff_tri_n:registro1.D[22]
+A[24] => ff_tri_n:registro1.D[23]
+A[25] => ff_tri_n:registro1.D[24]
+A[26] => ff_tri_n:registro1.D[25]
+A[27] => ff_tri_n:registro1.D[26]
+A[28] => ff_tri_n:registro1.D[27]
+A[29] => ff_tri_n:registro1.D[28]
+A[30] => ff_tri_n:registro1.D[29]
+A[31] => ff_tri_n:registro1.D[30]
+A[32] => ff_tri_n:registro1.D[31]
+B[1] => ff_tri_n:registro2.D[0]
+B[2] => ff_tri_n:registro2.D[1]
+B[3] => ff_tri_n:registro2.D[2]
+B[4] => ff_tri_n:registro2.D[3]
+B[5] => ff_tri_n:registro2.D[4]
+B[6] => ff_tri_n:registro2.D[5]
+B[7] => ff_tri_n:registro2.D[6]
+B[8] => ff_tri_n:registro2.D[7]
+B[9] => ff_tri_n:registro2.D[8]
+B[10] => ff_tri_n:registro2.D[9]
+B[11] => ff_tri_n:registro2.D[10]
+B[12] => ff_tri_n:registro2.D[11]
+B[13] => ff_tri_n:registro2.D[12]
+B[14] => ff_tri_n:registro2.D[13]
+B[15] => ff_tri_n:registro2.D[14]
+B[16] => ff_tri_n:registro2.D[15]
+B[17] => ff_tri_n:registro2.D[16]
+B[18] => ff_tri_n:registro2.D[17]
+B[19] => ff_tri_n:registro2.D[18]
+B[20] => ff_tri_n:registro2.D[19]
+B[21] => ff_tri_n:registro2.D[20]
+B[22] => ff_tri_n:registro2.D[21]
+B[23] => ff_tri_n:registro2.D[22]
+B[24] => ff_tri_n:registro2.D[23]
+B[25] => ff_tri_n:registro2.D[24]
+B[26] => ff_tri_n:registro2.D[25]
+B[27] => ff_tri_n:registro2.D[26]
+B[28] => ff_tri_n:registro2.D[27]
+B[29] => ff_tri_n:registro2.D[28]
+B[30] => ff_tri_n:registro2.D[29]
+B[31] => ff_tri_n:registro2.D[30]
+B[32] => ff_tri_n:registro2.D[31]
+Z[1] <= ff_tri_n:registro6.Q[0]
+Z[2] <= ff_tri_n:registro6.Q[1]
+Z[3] <= ff_tri_n:registro6.Q[2]
+Z[4] <= ff_tri_n:registro6.Q[3]
+Z[5] <= ff_tri_n:registro6.Q[4]
+Z[6] <= ff_tri_n:registro6.Q[5]
+Z[7] <= ff_tri_n:registro6.Q[6]
+Z[8] <= ff_tri_n:registro6.Q[7]
+Z[9] <= ff_tri_n:registro6.Q[8]
+Z[10] <= ff_tri_n:registro6.Q[9]
+Z[11] <= ff_tri_n:registro6.Q[10]
+Z[12] <= ff_tri_n:registro6.Q[11]
+Z[13] <= ff_tri_n:registro6.Q[12]
+Z[14] <= ff_tri_n:registro6.Q[13]
+Z[15] <= ff_tri_n:registro6.Q[14]
+Z[16] <= ff_tri_n:registro6.Q[15]
+Z[17] <= ff_tri_n:registro6.Q[16]
+Z[18] <= ff_tri_n:registro6.Q[17]
+Z[19] <= ff_tri_n:registro6.Q[18]
+Z[20] <= ff_tri_n:registro6.Q[19]
+Z[21] <= ff_tri_n:registro6.Q[20]
+Z[22] <= ff_tri_n:registro6.Q[21]
+Z[23] <= ff_tri_n:registro6.Q[22]
+Z[24] <= ff_tri_n:registro6.Q[23]
+Z[25] <= ff_tri_n:registro6.Q[24]
+Z[26] <= ff_tri_n:registro6.Q[25]
+Z[27] <= ff_tri_n:registro6.Q[26]
+Z[28] <= ff_tri_n:registro6.Q[27]
+Z[29] <= ff_tri_n:registro6.Q[28]
+Z[30] <= ff_tri_n:registro6.Q[29]
+Z[31] <= ff_tri_n:registro6.Q[30]
+Z[32] <= ff_tri_n:registro6.Q[31]
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1
+CLK => ff_d:FF_Tri:0:FF.CLK
+CLK => ff_d:FF_Tri:1:FF.CLK
+CLK => ff_d:FF_Tri:2:FF.CLK
+CLK => ff_d:FF_Tri:3:FF.CLK
+CLK => ff_d:FF_Tri:4:FF.CLK
+CLK => ff_d:FF_Tri:5:FF.CLK
+CLK => ff_d:FF_Tri:6:FF.CLK
+CLK => ff_d:FF_Tri:7:FF.CLK
+CLK => ff_d:FF_Tri:8:FF.CLK
+CLK => ff_d:FF_Tri:9:FF.CLK
+CLK => ff_d:FF_Tri:10:FF.CLK
+CLK => ff_d:FF_Tri:11:FF.CLK
+CLK => ff_d:FF_Tri:12:FF.CLK
+CLK => ff_d:FF_Tri:13:FF.CLK
+CLK => ff_d:FF_Tri:14:FF.CLK
+CLK => ff_d:FF_Tri:15:FF.CLK
+CLK => ff_d:FF_Tri:16:FF.CLK
+CLK => ff_d:FF_Tri:17:FF.CLK
+CLK => ff_d:FF_Tri:18:FF.CLK
+CLK => ff_d:FF_Tri:19:FF.CLK
+CLK => ff_d:FF_Tri:20:FF.CLK
+CLK => ff_d:FF_Tri:21:FF.CLK
+CLK => ff_d:FF_Tri:22:FF.CLK
+CLK => ff_d:FF_Tri:23:FF.CLK
+CLK => ff_d:FF_Tri:24:FF.CLK
+CLK => ff_d:FF_Tri:25:FF.CLK
+CLK => ff_d:FF_Tri:26:FF.CLK
+CLK => ff_d:FF_Tri:27:FF.CLK
+CLK => ff_d:FF_Tri:28:FF.CLK
+CLK => ff_d:FF_Tri:29:FF.CLK
+CLK => ff_d:FF_Tri:30:FF.CLK
+CLK => ff_d:FF_Tri:31:FF.CLK
+W => ff_d:FF_Tri:0:FF.W
+W => ff_d:FF_Tri:1:FF.W
+W => ff_d:FF_Tri:2:FF.W
+W => ff_d:FF_Tri:3:FF.W
+W => ff_d:FF_Tri:4:FF.W
+W => ff_d:FF_Tri:5:FF.W
+W => ff_d:FF_Tri:6:FF.W
+W => ff_d:FF_Tri:7:FF.W
+W => ff_d:FF_Tri:8:FF.W
+W => ff_d:FF_Tri:9:FF.W
+W => ff_d:FF_Tri:10:FF.W
+W => ff_d:FF_Tri:11:FF.W
+W => ff_d:FF_Tri:12:FF.W
+W => ff_d:FF_Tri:13:FF.W
+W => ff_d:FF_Tri:14:FF.W
+W => ff_d:FF_Tri:15:FF.W
+W => ff_d:FF_Tri:16:FF.W
+W => ff_d:FF_Tri:17:FF.W
+W => ff_d:FF_Tri:18:FF.W
+W => ff_d:FF_Tri:19:FF.W
+W => ff_d:FF_Tri:20:FF.W
+W => ff_d:FF_Tri:21:FF.W
+W => ff_d:FF_Tri:22:FF.W
+W => ff_d:FF_Tri:23:FF.W
+W => ff_d:FF_Tri:24:FF.W
+W => ff_d:FF_Tri:25:FF.W
+W => ff_d:FF_Tri:26:FF.W
+W => ff_d:FF_Tri:27:FF.W
+W => ff_d:FF_Tri:28:FF.W
+W => ff_d:FF_Tri:29:FF.W
+W => ff_d:FF_Tri:30:FF.W
+W => ff_d:FF_Tri:31:FF.W
+R => logic_tri:FF_Tri:0:Tri.R
+R => logic_tri:FF_Tri:1:Tri.R
+R => logic_tri:FF_Tri:2:Tri.R
+R => logic_tri:FF_Tri:3:Tri.R
+R => logic_tri:FF_Tri:4:Tri.R
+R => logic_tri:FF_Tri:5:Tri.R
+R => logic_tri:FF_Tri:6:Tri.R
+R => logic_tri:FF_Tri:7:Tri.R
+R => logic_tri:FF_Tri:8:Tri.R
+R => logic_tri:FF_Tri:9:Tri.R
+R => logic_tri:FF_Tri:10:Tri.R
+R => logic_tri:FF_Tri:11:Tri.R
+R => logic_tri:FF_Tri:12:Tri.R
+R => logic_tri:FF_Tri:13:Tri.R
+R => logic_tri:FF_Tri:14:Tri.R
+R => logic_tri:FF_Tri:15:Tri.R
+R => logic_tri:FF_Tri:16:Tri.R
+R => logic_tri:FF_Tri:17:Tri.R
+R => logic_tri:FF_Tri:18:Tri.R
+R => logic_tri:FF_Tri:19:Tri.R
+R => logic_tri:FF_Tri:20:Tri.R
+R => logic_tri:FF_Tri:21:Tri.R
+R => logic_tri:FF_Tri:22:Tri.R
+R => logic_tri:FF_Tri:23:Tri.R
+R => logic_tri:FF_Tri:24:Tri.R
+R => logic_tri:FF_Tri:25:Tri.R
+R => logic_tri:FF_Tri:26:Tri.R
+R => logic_tri:FF_Tri:27:Tri.R
+R => logic_tri:FF_Tri:28:Tri.R
+R => logic_tri:FF_Tri:29:Tri.R
+R => logic_tri:FF_Tri:30:Tri.R
+R => logic_tri:FF_Tri:31:Tri.R
+D[0] => ff_d:FF_Tri:0:FF.D
+D[1] => ff_d:FF_Tri:1:FF.D
+D[2] => ff_d:FF_Tri:2:FF.D
+D[3] => ff_d:FF_Tri:3:FF.D
+D[4] => ff_d:FF_Tri:4:FF.D
+D[5] => ff_d:FF_Tri:5:FF.D
+D[6] => ff_d:FF_Tri:6:FF.D
+D[7] => ff_d:FF_Tri:7:FF.D
+D[8] => ff_d:FF_Tri:8:FF.D
+D[9] => ff_d:FF_Tri:9:FF.D
+D[10] => ff_d:FF_Tri:10:FF.D
+D[11] => ff_d:FF_Tri:11:FF.D
+D[12] => ff_d:FF_Tri:12:FF.D
+D[13] => ff_d:FF_Tri:13:FF.D
+D[14] => ff_d:FF_Tri:14:FF.D
+D[15] => ff_d:FF_Tri:15:FF.D
+D[16] => ff_d:FF_Tri:16:FF.D
+D[17] => ff_d:FF_Tri:17:FF.D
+D[18] => ff_d:FF_Tri:18:FF.D
+D[19] => ff_d:FF_Tri:19:FF.D
+D[20] => ff_d:FF_Tri:20:FF.D
+D[21] => ff_d:FF_Tri:21:FF.D
+D[22] => ff_d:FF_Tri:22:FF.D
+D[23] => ff_d:FF_Tri:23:FF.D
+D[24] => ff_d:FF_Tri:24:FF.D
+D[25] => ff_d:FF_Tri:25:FF.D
+D[26] => ff_d:FF_Tri:26:FF.D
+D[27] => ff_d:FF_Tri:27:FF.D
+D[28] => ff_d:FF_Tri:28:FF.D
+D[29] => ff_d:FF_Tri:29:FF.D
+D[30] => ff_d:FF_Tri:30:FF.D
+D[31] => ff_d:FF_Tri:31:FF.D
+Q[0] <= logic_tri:FF_Tri:0:Tri.Dout
+Q[1] <= logic_tri:FF_Tri:1:Tri.Dout
+Q[2] <= logic_tri:FF_Tri:2:Tri.Dout
+Q[3] <= logic_tri:FF_Tri:3:Tri.Dout
+Q[4] <= logic_tri:FF_Tri:4:Tri.Dout
+Q[5] <= logic_tri:FF_Tri:5:Tri.Dout
+Q[6] <= logic_tri:FF_Tri:6:Tri.Dout
+Q[7] <= logic_tri:FF_Tri:7:Tri.Dout
+Q[8] <= logic_tri:FF_Tri:8:Tri.Dout
+Q[9] <= logic_tri:FF_Tri:9:Tri.Dout
+Q[10] <= logic_tri:FF_Tri:10:Tri.Dout
+Q[11] <= logic_tri:FF_Tri:11:Tri.Dout
+Q[12] <= logic_tri:FF_Tri:12:Tri.Dout
+Q[13] <= logic_tri:FF_Tri:13:Tri.Dout
+Q[14] <= logic_tri:FF_Tri:14:Tri.Dout
+Q[15] <= logic_tri:FF_Tri:15:Tri.Dout
+Q[16] <= logic_tri:FF_Tri:16:Tri.Dout
+Q[17] <= logic_tri:FF_Tri:17:Tri.Dout
+Q[18] <= logic_tri:FF_Tri:18:Tri.Dout
+Q[19] <= logic_tri:FF_Tri:19:Tri.Dout
+Q[20] <= logic_tri:FF_Tri:20:Tri.Dout
+Q[21] <= logic_tri:FF_Tri:21:Tri.Dout
+Q[22] <= logic_tri:FF_Tri:22:Tri.Dout
+Q[23] <= logic_tri:FF_Tri:23:Tri.Dout
+Q[24] <= logic_tri:FF_Tri:24:Tri.Dout
+Q[25] <= logic_tri:FF_Tri:25:Tri.Dout
+Q[26] <= logic_tri:FF_Tri:26:Tri.Dout
+Q[27] <= logic_tri:FF_Tri:27:Tri.Dout
+Q[28] <= logic_tri:FF_Tri:28:Tri.Dout
+Q[29] <= logic_tri:FF_Tri:29:Tri.Dout
+Q[30] <= logic_tri:FF_Tri:30:Tri.Dout
+Q[31] <= logic_tri:FF_Tri:31:Tri.Dout
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:0:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:0:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:1:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:1:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:2:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:2:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:3:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:3:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:4:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:4:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:5:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:5:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:6:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:6:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:7:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:7:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:8:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:8:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:9:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:9:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:10:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:10:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:11:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:11:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:12:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:12:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:13:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:13:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:14:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:14:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:15:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:15:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:16:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:16:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:17:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:17:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:18:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:18:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:19:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:19:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:20:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:20:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:21:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:21:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:22:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:22:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:23:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:23:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:24:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:24:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:25:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:25:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:26:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:26:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:27:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:27:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:28:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:28:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:29:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:29:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:30:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:30:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:31:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:31:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2
+CLK => ff_d:FF_Tri:0:FF.CLK
+CLK => ff_d:FF_Tri:1:FF.CLK
+CLK => ff_d:FF_Tri:2:FF.CLK
+CLK => ff_d:FF_Tri:3:FF.CLK
+CLK => ff_d:FF_Tri:4:FF.CLK
+CLK => ff_d:FF_Tri:5:FF.CLK
+CLK => ff_d:FF_Tri:6:FF.CLK
+CLK => ff_d:FF_Tri:7:FF.CLK
+CLK => ff_d:FF_Tri:8:FF.CLK
+CLK => ff_d:FF_Tri:9:FF.CLK
+CLK => ff_d:FF_Tri:10:FF.CLK
+CLK => ff_d:FF_Tri:11:FF.CLK
+CLK => ff_d:FF_Tri:12:FF.CLK
+CLK => ff_d:FF_Tri:13:FF.CLK
+CLK => ff_d:FF_Tri:14:FF.CLK
+CLK => ff_d:FF_Tri:15:FF.CLK
+CLK => ff_d:FF_Tri:16:FF.CLK
+CLK => ff_d:FF_Tri:17:FF.CLK
+CLK => ff_d:FF_Tri:18:FF.CLK
+CLK => ff_d:FF_Tri:19:FF.CLK
+CLK => ff_d:FF_Tri:20:FF.CLK
+CLK => ff_d:FF_Tri:21:FF.CLK
+CLK => ff_d:FF_Tri:22:FF.CLK
+CLK => ff_d:FF_Tri:23:FF.CLK
+CLK => ff_d:FF_Tri:24:FF.CLK
+CLK => ff_d:FF_Tri:25:FF.CLK
+CLK => ff_d:FF_Tri:26:FF.CLK
+CLK => ff_d:FF_Tri:27:FF.CLK
+CLK => ff_d:FF_Tri:28:FF.CLK
+CLK => ff_d:FF_Tri:29:FF.CLK
+CLK => ff_d:FF_Tri:30:FF.CLK
+CLK => ff_d:FF_Tri:31:FF.CLK
+W => ff_d:FF_Tri:0:FF.W
+W => ff_d:FF_Tri:1:FF.W
+W => ff_d:FF_Tri:2:FF.W
+W => ff_d:FF_Tri:3:FF.W
+W => ff_d:FF_Tri:4:FF.W
+W => ff_d:FF_Tri:5:FF.W
+W => ff_d:FF_Tri:6:FF.W
+W => ff_d:FF_Tri:7:FF.W
+W => ff_d:FF_Tri:8:FF.W
+W => ff_d:FF_Tri:9:FF.W
+W => ff_d:FF_Tri:10:FF.W
+W => ff_d:FF_Tri:11:FF.W
+W => ff_d:FF_Tri:12:FF.W
+W => ff_d:FF_Tri:13:FF.W
+W => ff_d:FF_Tri:14:FF.W
+W => ff_d:FF_Tri:15:FF.W
+W => ff_d:FF_Tri:16:FF.W
+W => ff_d:FF_Tri:17:FF.W
+W => ff_d:FF_Tri:18:FF.W
+W => ff_d:FF_Tri:19:FF.W
+W => ff_d:FF_Tri:20:FF.W
+W => ff_d:FF_Tri:21:FF.W
+W => ff_d:FF_Tri:22:FF.W
+W => ff_d:FF_Tri:23:FF.W
+W => ff_d:FF_Tri:24:FF.W
+W => ff_d:FF_Tri:25:FF.W
+W => ff_d:FF_Tri:26:FF.W
+W => ff_d:FF_Tri:27:FF.W
+W => ff_d:FF_Tri:28:FF.W
+W => ff_d:FF_Tri:29:FF.W
+W => ff_d:FF_Tri:30:FF.W
+W => ff_d:FF_Tri:31:FF.W
+R => logic_tri:FF_Tri:0:Tri.R
+R => logic_tri:FF_Tri:1:Tri.R
+R => logic_tri:FF_Tri:2:Tri.R
+R => logic_tri:FF_Tri:3:Tri.R
+R => logic_tri:FF_Tri:4:Tri.R
+R => logic_tri:FF_Tri:5:Tri.R
+R => logic_tri:FF_Tri:6:Tri.R
+R => logic_tri:FF_Tri:7:Tri.R
+R => logic_tri:FF_Tri:8:Tri.R
+R => logic_tri:FF_Tri:9:Tri.R
+R => logic_tri:FF_Tri:10:Tri.R
+R => logic_tri:FF_Tri:11:Tri.R
+R => logic_tri:FF_Tri:12:Tri.R
+R => logic_tri:FF_Tri:13:Tri.R
+R => logic_tri:FF_Tri:14:Tri.R
+R => logic_tri:FF_Tri:15:Tri.R
+R => logic_tri:FF_Tri:16:Tri.R
+R => logic_tri:FF_Tri:17:Tri.R
+R => logic_tri:FF_Tri:18:Tri.R
+R => logic_tri:FF_Tri:19:Tri.R
+R => logic_tri:FF_Tri:20:Tri.R
+R => logic_tri:FF_Tri:21:Tri.R
+R => logic_tri:FF_Tri:22:Tri.R
+R => logic_tri:FF_Tri:23:Tri.R
+R => logic_tri:FF_Tri:24:Tri.R
+R => logic_tri:FF_Tri:25:Tri.R
+R => logic_tri:FF_Tri:26:Tri.R
+R => logic_tri:FF_Tri:27:Tri.R
+R => logic_tri:FF_Tri:28:Tri.R
+R => logic_tri:FF_Tri:29:Tri.R
+R => logic_tri:FF_Tri:30:Tri.R
+R => logic_tri:FF_Tri:31:Tri.R
+D[0] => ff_d:FF_Tri:0:FF.D
+D[1] => ff_d:FF_Tri:1:FF.D
+D[2] => ff_d:FF_Tri:2:FF.D
+D[3] => ff_d:FF_Tri:3:FF.D
+D[4] => ff_d:FF_Tri:4:FF.D
+D[5] => ff_d:FF_Tri:5:FF.D
+D[6] => ff_d:FF_Tri:6:FF.D
+D[7] => ff_d:FF_Tri:7:FF.D
+D[8] => ff_d:FF_Tri:8:FF.D
+D[9] => ff_d:FF_Tri:9:FF.D
+D[10] => ff_d:FF_Tri:10:FF.D
+D[11] => ff_d:FF_Tri:11:FF.D
+D[12] => ff_d:FF_Tri:12:FF.D
+D[13] => ff_d:FF_Tri:13:FF.D
+D[14] => ff_d:FF_Tri:14:FF.D
+D[15] => ff_d:FF_Tri:15:FF.D
+D[16] => ff_d:FF_Tri:16:FF.D
+D[17] => ff_d:FF_Tri:17:FF.D
+D[18] => ff_d:FF_Tri:18:FF.D
+D[19] => ff_d:FF_Tri:19:FF.D
+D[20] => ff_d:FF_Tri:20:FF.D
+D[21] => ff_d:FF_Tri:21:FF.D
+D[22] => ff_d:FF_Tri:22:FF.D
+D[23] => ff_d:FF_Tri:23:FF.D
+D[24] => ff_d:FF_Tri:24:FF.D
+D[25] => ff_d:FF_Tri:25:FF.D
+D[26] => ff_d:FF_Tri:26:FF.D
+D[27] => ff_d:FF_Tri:27:FF.D
+D[28] => ff_d:FF_Tri:28:FF.D
+D[29] => ff_d:FF_Tri:29:FF.D
+D[30] => ff_d:FF_Tri:30:FF.D
+D[31] => ff_d:FF_Tri:31:FF.D
+Q[0] <= logic_tri:FF_Tri:0:Tri.Dout
+Q[1] <= logic_tri:FF_Tri:1:Tri.Dout
+Q[2] <= logic_tri:FF_Tri:2:Tri.Dout
+Q[3] <= logic_tri:FF_Tri:3:Tri.Dout
+Q[4] <= logic_tri:FF_Tri:4:Tri.Dout
+Q[5] <= logic_tri:FF_Tri:5:Tri.Dout
+Q[6] <= logic_tri:FF_Tri:6:Tri.Dout
+Q[7] <= logic_tri:FF_Tri:7:Tri.Dout
+Q[8] <= logic_tri:FF_Tri:8:Tri.Dout
+Q[9] <= logic_tri:FF_Tri:9:Tri.Dout
+Q[10] <= logic_tri:FF_Tri:10:Tri.Dout
+Q[11] <= logic_tri:FF_Tri:11:Tri.Dout
+Q[12] <= logic_tri:FF_Tri:12:Tri.Dout
+Q[13] <= logic_tri:FF_Tri:13:Tri.Dout
+Q[14] <= logic_tri:FF_Tri:14:Tri.Dout
+Q[15] <= logic_tri:FF_Tri:15:Tri.Dout
+Q[16] <= logic_tri:FF_Tri:16:Tri.Dout
+Q[17] <= logic_tri:FF_Tri:17:Tri.Dout
+Q[18] <= logic_tri:FF_Tri:18:Tri.Dout
+Q[19] <= logic_tri:FF_Tri:19:Tri.Dout
+Q[20] <= logic_tri:FF_Tri:20:Tri.Dout
+Q[21] <= logic_tri:FF_Tri:21:Tri.Dout
+Q[22] <= logic_tri:FF_Tri:22:Tri.Dout
+Q[23] <= logic_tri:FF_Tri:23:Tri.Dout
+Q[24] <= logic_tri:FF_Tri:24:Tri.Dout
+Q[25] <= logic_tri:FF_Tri:25:Tri.Dout
+Q[26] <= logic_tri:FF_Tri:26:Tri.Dout
+Q[27] <= logic_tri:FF_Tri:27:Tri.Dout
+Q[28] <= logic_tri:FF_Tri:28:Tri.Dout
+Q[29] <= logic_tri:FF_Tri:29:Tri.Dout
+Q[30] <= logic_tri:FF_Tri:30:Tri.Dout
+Q[31] <= logic_tri:FF_Tri:31:Tri.Dout
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:0:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:0:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:1:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:1:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:2:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:2:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:3:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:3:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:4:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:4:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:5:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:5:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:6:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:6:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:7:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:7:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:8:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:8:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:9:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:9:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:10:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:10:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:11:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:11:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:12:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:12:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:13:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:13:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:14:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:14:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:15:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:15:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:16:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:16:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:17:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:17:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:18:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:18:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:19:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:19:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:20:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:20:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:21:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:21:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:22:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:22:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:23:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:23:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:24:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:24:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:25:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:25:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:26:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:26:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:27:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:27:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:28:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:28:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:29:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:29:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:30:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:30:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|FF_D:\FF_Tri:31:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro2|logic_Tri:\FF_Tri:31:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3
+CLK => ff_d:FF_Tri:0:FF.CLK
+CLK => ff_d:FF_Tri:1:FF.CLK
+CLK => ff_d:FF_Tri:2:FF.CLK
+CLK => ff_d:FF_Tri:3:FF.CLK
+CLK => ff_d:FF_Tri:4:FF.CLK
+CLK => ff_d:FF_Tri:5:FF.CLK
+CLK => ff_d:FF_Tri:6:FF.CLK
+CLK => ff_d:FF_Tri:7:FF.CLK
+CLK => ff_d:FF_Tri:8:FF.CLK
+CLK => ff_d:FF_Tri:9:FF.CLK
+CLK => ff_d:FF_Tri:10:FF.CLK
+CLK => ff_d:FF_Tri:11:FF.CLK
+CLK => ff_d:FF_Tri:12:FF.CLK
+CLK => ff_d:FF_Tri:13:FF.CLK
+CLK => ff_d:FF_Tri:14:FF.CLK
+CLK => ff_d:FF_Tri:15:FF.CLK
+CLK => ff_d:FF_Tri:16:FF.CLK
+CLK => ff_d:FF_Tri:17:FF.CLK
+CLK => ff_d:FF_Tri:18:FF.CLK
+CLK => ff_d:FF_Tri:19:FF.CLK
+CLK => ff_d:FF_Tri:20:FF.CLK
+CLK => ff_d:FF_Tri:21:FF.CLK
+CLK => ff_d:FF_Tri:22:FF.CLK
+CLK => ff_d:FF_Tri:23:FF.CLK
+CLK => ff_d:FF_Tri:24:FF.CLK
+CLK => ff_d:FF_Tri:25:FF.CLK
+CLK => ff_d:FF_Tri:26:FF.CLK
+CLK => ff_d:FF_Tri:27:FF.CLK
+CLK => ff_d:FF_Tri:28:FF.CLK
+CLK => ff_d:FF_Tri:29:FF.CLK
+CLK => ff_d:FF_Tri:30:FF.CLK
+CLK => ff_d:FF_Tri:31:FF.CLK
+W => ff_d:FF_Tri:0:FF.W
+W => ff_d:FF_Tri:1:FF.W
+W => ff_d:FF_Tri:2:FF.W
+W => ff_d:FF_Tri:3:FF.W
+W => ff_d:FF_Tri:4:FF.W
+W => ff_d:FF_Tri:5:FF.W
+W => ff_d:FF_Tri:6:FF.W
+W => ff_d:FF_Tri:7:FF.W
+W => ff_d:FF_Tri:8:FF.W
+W => ff_d:FF_Tri:9:FF.W
+W => ff_d:FF_Tri:10:FF.W
+W => ff_d:FF_Tri:11:FF.W
+W => ff_d:FF_Tri:12:FF.W
+W => ff_d:FF_Tri:13:FF.W
+W => ff_d:FF_Tri:14:FF.W
+W => ff_d:FF_Tri:15:FF.W
+W => ff_d:FF_Tri:16:FF.W
+W => ff_d:FF_Tri:17:FF.W
+W => ff_d:FF_Tri:18:FF.W
+W => ff_d:FF_Tri:19:FF.W
+W => ff_d:FF_Tri:20:FF.W
+W => ff_d:FF_Tri:21:FF.W
+W => ff_d:FF_Tri:22:FF.W
+W => ff_d:FF_Tri:23:FF.W
+W => ff_d:FF_Tri:24:FF.W
+W => ff_d:FF_Tri:25:FF.W
+W => ff_d:FF_Tri:26:FF.W
+W => ff_d:FF_Tri:27:FF.W
+W => ff_d:FF_Tri:28:FF.W
+W => ff_d:FF_Tri:29:FF.W
+W => ff_d:FF_Tri:30:FF.W
+W => ff_d:FF_Tri:31:FF.W
+R => logic_tri:FF_Tri:0:Tri.R
+R => logic_tri:FF_Tri:1:Tri.R
+R => logic_tri:FF_Tri:2:Tri.R
+R => logic_tri:FF_Tri:3:Tri.R
+R => logic_tri:FF_Tri:4:Tri.R
+R => logic_tri:FF_Tri:5:Tri.R
+R => logic_tri:FF_Tri:6:Tri.R
+R => logic_tri:FF_Tri:7:Tri.R
+R => logic_tri:FF_Tri:8:Tri.R
+R => logic_tri:FF_Tri:9:Tri.R
+R => logic_tri:FF_Tri:10:Tri.R
+R => logic_tri:FF_Tri:11:Tri.R
+R => logic_tri:FF_Tri:12:Tri.R
+R => logic_tri:FF_Tri:13:Tri.R
+R => logic_tri:FF_Tri:14:Tri.R
+R => logic_tri:FF_Tri:15:Tri.R
+R => logic_tri:FF_Tri:16:Tri.R
+R => logic_tri:FF_Tri:17:Tri.R
+R => logic_tri:FF_Tri:18:Tri.R
+R => logic_tri:FF_Tri:19:Tri.R
+R => logic_tri:FF_Tri:20:Tri.R
+R => logic_tri:FF_Tri:21:Tri.R
+R => logic_tri:FF_Tri:22:Tri.R
+R => logic_tri:FF_Tri:23:Tri.R
+R => logic_tri:FF_Tri:24:Tri.R
+R => logic_tri:FF_Tri:25:Tri.R
+R => logic_tri:FF_Tri:26:Tri.R
+R => logic_tri:FF_Tri:27:Tri.R
+R => logic_tri:FF_Tri:28:Tri.R
+R => logic_tri:FF_Tri:29:Tri.R
+R => logic_tri:FF_Tri:30:Tri.R
+R => logic_tri:FF_Tri:31:Tri.R
+D[0] => ff_d:FF_Tri:0:FF.D
+D[1] => ff_d:FF_Tri:1:FF.D
+D[2] => ff_d:FF_Tri:2:FF.D
+D[3] => ff_d:FF_Tri:3:FF.D
+D[4] => ff_d:FF_Tri:4:FF.D
+D[5] => ff_d:FF_Tri:5:FF.D
+D[6] => ff_d:FF_Tri:6:FF.D
+D[7] => ff_d:FF_Tri:7:FF.D
+D[8] => ff_d:FF_Tri:8:FF.D
+D[9] => ff_d:FF_Tri:9:FF.D
+D[10] => ff_d:FF_Tri:10:FF.D
+D[11] => ff_d:FF_Tri:11:FF.D
+D[12] => ff_d:FF_Tri:12:FF.D
+D[13] => ff_d:FF_Tri:13:FF.D
+D[14] => ff_d:FF_Tri:14:FF.D
+D[15] => ff_d:FF_Tri:15:FF.D
+D[16] => ff_d:FF_Tri:16:FF.D
+D[17] => ff_d:FF_Tri:17:FF.D
+D[18] => ff_d:FF_Tri:18:FF.D
+D[19] => ff_d:FF_Tri:19:FF.D
+D[20] => ff_d:FF_Tri:20:FF.D
+D[21] => ff_d:FF_Tri:21:FF.D
+D[22] => ff_d:FF_Tri:22:FF.D
+D[23] => ff_d:FF_Tri:23:FF.D
+D[24] => ff_d:FF_Tri:24:FF.D
+D[25] => ff_d:FF_Tri:25:FF.D
+D[26] => ff_d:FF_Tri:26:FF.D
+D[27] => ff_d:FF_Tri:27:FF.D
+D[28] => ff_d:FF_Tri:28:FF.D
+D[29] => ff_d:FF_Tri:29:FF.D
+D[30] => ff_d:FF_Tri:30:FF.D
+D[31] => ff_d:FF_Tri:31:FF.D
+Q[0] <= logic_tri:FF_Tri:0:Tri.Dout
+Q[1] <= logic_tri:FF_Tri:1:Tri.Dout
+Q[2] <= logic_tri:FF_Tri:2:Tri.Dout
+Q[3] <= logic_tri:FF_Tri:3:Tri.Dout
+Q[4] <= logic_tri:FF_Tri:4:Tri.Dout
+Q[5] <= logic_tri:FF_Tri:5:Tri.Dout
+Q[6] <= logic_tri:FF_Tri:6:Tri.Dout
+Q[7] <= logic_tri:FF_Tri:7:Tri.Dout
+Q[8] <= logic_tri:FF_Tri:8:Tri.Dout
+Q[9] <= logic_tri:FF_Tri:9:Tri.Dout
+Q[10] <= logic_tri:FF_Tri:10:Tri.Dout
+Q[11] <= logic_tri:FF_Tri:11:Tri.Dout
+Q[12] <= logic_tri:FF_Tri:12:Tri.Dout
+Q[13] <= logic_tri:FF_Tri:13:Tri.Dout
+Q[14] <= logic_tri:FF_Tri:14:Tri.Dout
+Q[15] <= logic_tri:FF_Tri:15:Tri.Dout
+Q[16] <= logic_tri:FF_Tri:16:Tri.Dout
+Q[17] <= logic_tri:FF_Tri:17:Tri.Dout
+Q[18] <= logic_tri:FF_Tri:18:Tri.Dout
+Q[19] <= logic_tri:FF_Tri:19:Tri.Dout
+Q[20] <= logic_tri:FF_Tri:20:Tri.Dout
+Q[21] <= logic_tri:FF_Tri:21:Tri.Dout
+Q[22] <= logic_tri:FF_Tri:22:Tri.Dout
+Q[23] <= logic_tri:FF_Tri:23:Tri.Dout
+Q[24] <= logic_tri:FF_Tri:24:Tri.Dout
+Q[25] <= logic_tri:FF_Tri:25:Tri.Dout
+Q[26] <= logic_tri:FF_Tri:26:Tri.Dout
+Q[27] <= logic_tri:FF_Tri:27:Tri.Dout
+Q[28] <= logic_tri:FF_Tri:28:Tri.Dout
+Q[29] <= logic_tri:FF_Tri:29:Tri.Dout
+Q[30] <= logic_tri:FF_Tri:30:Tri.Dout
+Q[31] <= logic_tri:FF_Tri:31:Tri.Dout
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:0:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:0:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:1:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:1:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:2:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:2:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:3:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:3:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:4:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:4:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:5:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:5:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:6:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:6:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:7:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:7:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:8:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:8:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:9:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:9:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:10:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:10:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:11:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:11:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:12:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:12:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:13:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:13:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:14:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:14:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:15:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:15:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:16:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:16:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:17:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:17:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:18:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:18:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:19:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:19:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:20:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:20:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:21:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:21:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:22:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:22:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:23:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:23:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:24:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:24:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:25:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:25:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:26:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:26:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:27:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:27:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:28:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:28:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:29:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:29:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:30:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:30:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|FF_D:\FF_Tri:31:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:31:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4
+CLK => ff_d:FF_Tri:0:FF.CLK
+CLK => ff_d:FF_Tri:1:FF.CLK
+CLK => ff_d:FF_Tri:2:FF.CLK
+CLK => ff_d:FF_Tri:3:FF.CLK
+CLK => ff_d:FF_Tri:4:FF.CLK
+CLK => ff_d:FF_Tri:5:FF.CLK
+CLK => ff_d:FF_Tri:6:FF.CLK
+CLK => ff_d:FF_Tri:7:FF.CLK
+CLK => ff_d:FF_Tri:8:FF.CLK
+CLK => ff_d:FF_Tri:9:FF.CLK
+CLK => ff_d:FF_Tri:10:FF.CLK
+CLK => ff_d:FF_Tri:11:FF.CLK
+CLK => ff_d:FF_Tri:12:FF.CLK
+CLK => ff_d:FF_Tri:13:FF.CLK
+CLK => ff_d:FF_Tri:14:FF.CLK
+CLK => ff_d:FF_Tri:15:FF.CLK
+CLK => ff_d:FF_Tri:16:FF.CLK
+CLK => ff_d:FF_Tri:17:FF.CLK
+CLK => ff_d:FF_Tri:18:FF.CLK
+CLK => ff_d:FF_Tri:19:FF.CLK
+CLK => ff_d:FF_Tri:20:FF.CLK
+CLK => ff_d:FF_Tri:21:FF.CLK
+CLK => ff_d:FF_Tri:22:FF.CLK
+CLK => ff_d:FF_Tri:23:FF.CLK
+CLK => ff_d:FF_Tri:24:FF.CLK
+CLK => ff_d:FF_Tri:25:FF.CLK
+CLK => ff_d:FF_Tri:26:FF.CLK
+CLK => ff_d:FF_Tri:27:FF.CLK
+CLK => ff_d:FF_Tri:28:FF.CLK
+CLK => ff_d:FF_Tri:29:FF.CLK
+CLK => ff_d:FF_Tri:30:FF.CLK
+CLK => ff_d:FF_Tri:31:FF.CLK
+W => ff_d:FF_Tri:0:FF.W
+W => ff_d:FF_Tri:1:FF.W
+W => ff_d:FF_Tri:2:FF.W
+W => ff_d:FF_Tri:3:FF.W
+W => ff_d:FF_Tri:4:FF.W
+W => ff_d:FF_Tri:5:FF.W
+W => ff_d:FF_Tri:6:FF.W
+W => ff_d:FF_Tri:7:FF.W
+W => ff_d:FF_Tri:8:FF.W
+W => ff_d:FF_Tri:9:FF.W
+W => ff_d:FF_Tri:10:FF.W
+W => ff_d:FF_Tri:11:FF.W
+W => ff_d:FF_Tri:12:FF.W
+W => ff_d:FF_Tri:13:FF.W
+W => ff_d:FF_Tri:14:FF.W
+W => ff_d:FF_Tri:15:FF.W
+W => ff_d:FF_Tri:16:FF.W
+W => ff_d:FF_Tri:17:FF.W
+W => ff_d:FF_Tri:18:FF.W
+W => ff_d:FF_Tri:19:FF.W
+W => ff_d:FF_Tri:20:FF.W
+W => ff_d:FF_Tri:21:FF.W
+W => ff_d:FF_Tri:22:FF.W
+W => ff_d:FF_Tri:23:FF.W
+W => ff_d:FF_Tri:24:FF.W
+W => ff_d:FF_Tri:25:FF.W
+W => ff_d:FF_Tri:26:FF.W
+W => ff_d:FF_Tri:27:FF.W
+W => ff_d:FF_Tri:28:FF.W
+W => ff_d:FF_Tri:29:FF.W
+W => ff_d:FF_Tri:30:FF.W
+W => ff_d:FF_Tri:31:FF.W
+R => logic_tri:FF_Tri:0:Tri.R
+R => logic_tri:FF_Tri:1:Tri.R
+R => logic_tri:FF_Tri:2:Tri.R
+R => logic_tri:FF_Tri:3:Tri.R
+R => logic_tri:FF_Tri:4:Tri.R
+R => logic_tri:FF_Tri:5:Tri.R
+R => logic_tri:FF_Tri:6:Tri.R
+R => logic_tri:FF_Tri:7:Tri.R
+R => logic_tri:FF_Tri:8:Tri.R
+R => logic_tri:FF_Tri:9:Tri.R
+R => logic_tri:FF_Tri:10:Tri.R
+R => logic_tri:FF_Tri:11:Tri.R
+R => logic_tri:FF_Tri:12:Tri.R
+R => logic_tri:FF_Tri:13:Tri.R
+R => logic_tri:FF_Tri:14:Tri.R
+R => logic_tri:FF_Tri:15:Tri.R
+R => logic_tri:FF_Tri:16:Tri.R
+R => logic_tri:FF_Tri:17:Tri.R
+R => logic_tri:FF_Tri:18:Tri.R
+R => logic_tri:FF_Tri:19:Tri.R
+R => logic_tri:FF_Tri:20:Tri.R
+R => logic_tri:FF_Tri:21:Tri.R
+R => logic_tri:FF_Tri:22:Tri.R
+R => logic_tri:FF_Tri:23:Tri.R
+R => logic_tri:FF_Tri:24:Tri.R
+R => logic_tri:FF_Tri:25:Tri.R
+R => logic_tri:FF_Tri:26:Tri.R
+R => logic_tri:FF_Tri:27:Tri.R
+R => logic_tri:FF_Tri:28:Tri.R
+R => logic_tri:FF_Tri:29:Tri.R
+R => logic_tri:FF_Tri:30:Tri.R
+R => logic_tri:FF_Tri:31:Tri.R
+D[0] => ff_d:FF_Tri:0:FF.D
+D[1] => ff_d:FF_Tri:1:FF.D
+D[2] => ff_d:FF_Tri:2:FF.D
+D[3] => ff_d:FF_Tri:3:FF.D
+D[4] => ff_d:FF_Tri:4:FF.D
+D[5] => ff_d:FF_Tri:5:FF.D
+D[6] => ff_d:FF_Tri:6:FF.D
+D[7] => ff_d:FF_Tri:7:FF.D
+D[8] => ff_d:FF_Tri:8:FF.D
+D[9] => ff_d:FF_Tri:9:FF.D
+D[10] => ff_d:FF_Tri:10:FF.D
+D[11] => ff_d:FF_Tri:11:FF.D
+D[12] => ff_d:FF_Tri:12:FF.D
+D[13] => ff_d:FF_Tri:13:FF.D
+D[14] => ff_d:FF_Tri:14:FF.D
+D[15] => ff_d:FF_Tri:15:FF.D
+D[16] => ff_d:FF_Tri:16:FF.D
+D[17] => ff_d:FF_Tri:17:FF.D
+D[18] => ff_d:FF_Tri:18:FF.D
+D[19] => ff_d:FF_Tri:19:FF.D
+D[20] => ff_d:FF_Tri:20:FF.D
+D[21] => ff_d:FF_Tri:21:FF.D
+D[22] => ff_d:FF_Tri:22:FF.D
+D[23] => ff_d:FF_Tri:23:FF.D
+D[24] => ff_d:FF_Tri:24:FF.D
+D[25] => ff_d:FF_Tri:25:FF.D
+D[26] => ff_d:FF_Tri:26:FF.D
+D[27] => ff_d:FF_Tri:27:FF.D
+D[28] => ff_d:FF_Tri:28:FF.D
+D[29] => ff_d:FF_Tri:29:FF.D
+D[30] => ff_d:FF_Tri:30:FF.D
+D[31] => ff_d:FF_Tri:31:FF.D
+Q[0] <= logic_tri:FF_Tri:0:Tri.Dout
+Q[1] <= logic_tri:FF_Tri:1:Tri.Dout
+Q[2] <= logic_tri:FF_Tri:2:Tri.Dout
+Q[3] <= logic_tri:FF_Tri:3:Tri.Dout
+Q[4] <= logic_tri:FF_Tri:4:Tri.Dout
+Q[5] <= logic_tri:FF_Tri:5:Tri.Dout
+Q[6] <= logic_tri:FF_Tri:6:Tri.Dout
+Q[7] <= logic_tri:FF_Tri:7:Tri.Dout
+Q[8] <= logic_tri:FF_Tri:8:Tri.Dout
+Q[9] <= logic_tri:FF_Tri:9:Tri.Dout
+Q[10] <= logic_tri:FF_Tri:10:Tri.Dout
+Q[11] <= logic_tri:FF_Tri:11:Tri.Dout
+Q[12] <= logic_tri:FF_Tri:12:Tri.Dout
+Q[13] <= logic_tri:FF_Tri:13:Tri.Dout
+Q[14] <= logic_tri:FF_Tri:14:Tri.Dout
+Q[15] <= logic_tri:FF_Tri:15:Tri.Dout
+Q[16] <= logic_tri:FF_Tri:16:Tri.Dout
+Q[17] <= logic_tri:FF_Tri:17:Tri.Dout
+Q[18] <= logic_tri:FF_Tri:18:Tri.Dout
+Q[19] <= logic_tri:FF_Tri:19:Tri.Dout
+Q[20] <= logic_tri:FF_Tri:20:Tri.Dout
+Q[21] <= logic_tri:FF_Tri:21:Tri.Dout
+Q[22] <= logic_tri:FF_Tri:22:Tri.Dout
+Q[23] <= logic_tri:FF_Tri:23:Tri.Dout
+Q[24] <= logic_tri:FF_Tri:24:Tri.Dout
+Q[25] <= logic_tri:FF_Tri:25:Tri.Dout
+Q[26] <= logic_tri:FF_Tri:26:Tri.Dout
+Q[27] <= logic_tri:FF_Tri:27:Tri.Dout
+Q[28] <= logic_tri:FF_Tri:28:Tri.Dout
+Q[29] <= logic_tri:FF_Tri:29:Tri.Dout
+Q[30] <= logic_tri:FF_Tri:30:Tri.Dout
+Q[31] <= logic_tri:FF_Tri:31:Tri.Dout
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:0:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:0:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:1:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:1:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:2:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:2:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:3:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:3:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:4:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:4:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:5:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:5:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:6:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:6:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:7:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:7:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:8:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:8:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:9:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:9:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:10:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:10:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:11:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:11:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:12:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:12:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:13:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:13:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:14:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:14:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:15:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:15:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:16:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:16:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:17:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:17:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:18:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:18:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:19:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:19:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:20:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:20:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:21:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:21:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:22:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:22:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:23:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:23:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:24:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:24:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:25:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:25:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:26:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:26:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:27:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:27:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:28:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:28:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:29:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:29:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:30:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:30:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|FF_D:\FF_Tri:31:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:31:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5
+CLK => ff_d:FF_Tri:0:FF.CLK
+CLK => ff_d:FF_Tri:1:FF.CLK
+CLK => ff_d:FF_Tri:2:FF.CLK
+CLK => ff_d:FF_Tri:3:FF.CLK
+CLK => ff_d:FF_Tri:4:FF.CLK
+CLK => ff_d:FF_Tri:5:FF.CLK
+CLK => ff_d:FF_Tri:6:FF.CLK
+CLK => ff_d:FF_Tri:7:FF.CLK
+CLK => ff_d:FF_Tri:8:FF.CLK
+CLK => ff_d:FF_Tri:9:FF.CLK
+CLK => ff_d:FF_Tri:10:FF.CLK
+CLK => ff_d:FF_Tri:11:FF.CLK
+CLK => ff_d:FF_Tri:12:FF.CLK
+CLK => ff_d:FF_Tri:13:FF.CLK
+CLK => ff_d:FF_Tri:14:FF.CLK
+CLK => ff_d:FF_Tri:15:FF.CLK
+CLK => ff_d:FF_Tri:16:FF.CLK
+CLK => ff_d:FF_Tri:17:FF.CLK
+CLK => ff_d:FF_Tri:18:FF.CLK
+CLK => ff_d:FF_Tri:19:FF.CLK
+CLK => ff_d:FF_Tri:20:FF.CLK
+CLK => ff_d:FF_Tri:21:FF.CLK
+CLK => ff_d:FF_Tri:22:FF.CLK
+CLK => ff_d:FF_Tri:23:FF.CLK
+CLK => ff_d:FF_Tri:24:FF.CLK
+CLK => ff_d:FF_Tri:25:FF.CLK
+CLK => ff_d:FF_Tri:26:FF.CLK
+CLK => ff_d:FF_Tri:27:FF.CLK
+CLK => ff_d:FF_Tri:28:FF.CLK
+CLK => ff_d:FF_Tri:29:FF.CLK
+CLK => ff_d:FF_Tri:30:FF.CLK
+CLK => ff_d:FF_Tri:31:FF.CLK
+W => ff_d:FF_Tri:0:FF.W
+W => ff_d:FF_Tri:1:FF.W
+W => ff_d:FF_Tri:2:FF.W
+W => ff_d:FF_Tri:3:FF.W
+W => ff_d:FF_Tri:4:FF.W
+W => ff_d:FF_Tri:5:FF.W
+W => ff_d:FF_Tri:6:FF.W
+W => ff_d:FF_Tri:7:FF.W
+W => ff_d:FF_Tri:8:FF.W
+W => ff_d:FF_Tri:9:FF.W
+W => ff_d:FF_Tri:10:FF.W
+W => ff_d:FF_Tri:11:FF.W
+W => ff_d:FF_Tri:12:FF.W
+W => ff_d:FF_Tri:13:FF.W
+W => ff_d:FF_Tri:14:FF.W
+W => ff_d:FF_Tri:15:FF.W
+W => ff_d:FF_Tri:16:FF.W
+W => ff_d:FF_Tri:17:FF.W
+W => ff_d:FF_Tri:18:FF.W
+W => ff_d:FF_Tri:19:FF.W
+W => ff_d:FF_Tri:20:FF.W
+W => ff_d:FF_Tri:21:FF.W
+W => ff_d:FF_Tri:22:FF.W
+W => ff_d:FF_Tri:23:FF.W
+W => ff_d:FF_Tri:24:FF.W
+W => ff_d:FF_Tri:25:FF.W
+W => ff_d:FF_Tri:26:FF.W
+W => ff_d:FF_Tri:27:FF.W
+W => ff_d:FF_Tri:28:FF.W
+W => ff_d:FF_Tri:29:FF.W
+W => ff_d:FF_Tri:30:FF.W
+W => ff_d:FF_Tri:31:FF.W
+R => logic_tri:FF_Tri:0:Tri.R
+R => logic_tri:FF_Tri:1:Tri.R
+R => logic_tri:FF_Tri:2:Tri.R
+R => logic_tri:FF_Tri:3:Tri.R
+R => logic_tri:FF_Tri:4:Tri.R
+R => logic_tri:FF_Tri:5:Tri.R
+R => logic_tri:FF_Tri:6:Tri.R
+R => logic_tri:FF_Tri:7:Tri.R
+R => logic_tri:FF_Tri:8:Tri.R
+R => logic_tri:FF_Tri:9:Tri.R
+R => logic_tri:FF_Tri:10:Tri.R
+R => logic_tri:FF_Tri:11:Tri.R
+R => logic_tri:FF_Tri:12:Tri.R
+R => logic_tri:FF_Tri:13:Tri.R
+R => logic_tri:FF_Tri:14:Tri.R
+R => logic_tri:FF_Tri:15:Tri.R
+R => logic_tri:FF_Tri:16:Tri.R
+R => logic_tri:FF_Tri:17:Tri.R
+R => logic_tri:FF_Tri:18:Tri.R
+R => logic_tri:FF_Tri:19:Tri.R
+R => logic_tri:FF_Tri:20:Tri.R
+R => logic_tri:FF_Tri:21:Tri.R
+R => logic_tri:FF_Tri:22:Tri.R
+R => logic_tri:FF_Tri:23:Tri.R
+R => logic_tri:FF_Tri:24:Tri.R
+R => logic_tri:FF_Tri:25:Tri.R
+R => logic_tri:FF_Tri:26:Tri.R
+R => logic_tri:FF_Tri:27:Tri.R
+R => logic_tri:FF_Tri:28:Tri.R
+R => logic_tri:FF_Tri:29:Tri.R
+R => logic_tri:FF_Tri:30:Tri.R
+R => logic_tri:FF_Tri:31:Tri.R
+D[0] => ff_d:FF_Tri:0:FF.D
+D[1] => ff_d:FF_Tri:1:FF.D
+D[2] => ff_d:FF_Tri:2:FF.D
+D[3] => ff_d:FF_Tri:3:FF.D
+D[4] => ff_d:FF_Tri:4:FF.D
+D[5] => ff_d:FF_Tri:5:FF.D
+D[6] => ff_d:FF_Tri:6:FF.D
+D[7] => ff_d:FF_Tri:7:FF.D
+D[8] => ff_d:FF_Tri:8:FF.D
+D[9] => ff_d:FF_Tri:9:FF.D
+D[10] => ff_d:FF_Tri:10:FF.D
+D[11] => ff_d:FF_Tri:11:FF.D
+D[12] => ff_d:FF_Tri:12:FF.D
+D[13] => ff_d:FF_Tri:13:FF.D
+D[14] => ff_d:FF_Tri:14:FF.D
+D[15] => ff_d:FF_Tri:15:FF.D
+D[16] => ff_d:FF_Tri:16:FF.D
+D[17] => ff_d:FF_Tri:17:FF.D
+D[18] => ff_d:FF_Tri:18:FF.D
+D[19] => ff_d:FF_Tri:19:FF.D
+D[20] => ff_d:FF_Tri:20:FF.D
+D[21] => ff_d:FF_Tri:21:FF.D
+D[22] => ff_d:FF_Tri:22:FF.D
+D[23] => ff_d:FF_Tri:23:FF.D
+D[24] => ff_d:FF_Tri:24:FF.D
+D[25] => ff_d:FF_Tri:25:FF.D
+D[26] => ff_d:FF_Tri:26:FF.D
+D[27] => ff_d:FF_Tri:27:FF.D
+D[28] => ff_d:FF_Tri:28:FF.D
+D[29] => ff_d:FF_Tri:29:FF.D
+D[30] => ff_d:FF_Tri:30:FF.D
+D[31] => ff_d:FF_Tri:31:FF.D
+Q[0] <= logic_tri:FF_Tri:0:Tri.Dout
+Q[1] <= logic_tri:FF_Tri:1:Tri.Dout
+Q[2] <= logic_tri:FF_Tri:2:Tri.Dout
+Q[3] <= logic_tri:FF_Tri:3:Tri.Dout
+Q[4] <= logic_tri:FF_Tri:4:Tri.Dout
+Q[5] <= logic_tri:FF_Tri:5:Tri.Dout
+Q[6] <= logic_tri:FF_Tri:6:Tri.Dout
+Q[7] <= logic_tri:FF_Tri:7:Tri.Dout
+Q[8] <= logic_tri:FF_Tri:8:Tri.Dout
+Q[9] <= logic_tri:FF_Tri:9:Tri.Dout
+Q[10] <= logic_tri:FF_Tri:10:Tri.Dout
+Q[11] <= logic_tri:FF_Tri:11:Tri.Dout
+Q[12] <= logic_tri:FF_Tri:12:Tri.Dout
+Q[13] <= logic_tri:FF_Tri:13:Tri.Dout
+Q[14] <= logic_tri:FF_Tri:14:Tri.Dout
+Q[15] <= logic_tri:FF_Tri:15:Tri.Dout
+Q[16] <= logic_tri:FF_Tri:16:Tri.Dout
+Q[17] <= logic_tri:FF_Tri:17:Tri.Dout
+Q[18] <= logic_tri:FF_Tri:18:Tri.Dout
+Q[19] <= logic_tri:FF_Tri:19:Tri.Dout
+Q[20] <= logic_tri:FF_Tri:20:Tri.Dout
+Q[21] <= logic_tri:FF_Tri:21:Tri.Dout
+Q[22] <= logic_tri:FF_Tri:22:Tri.Dout
+Q[23] <= logic_tri:FF_Tri:23:Tri.Dout
+Q[24] <= logic_tri:FF_Tri:24:Tri.Dout
+Q[25] <= logic_tri:FF_Tri:25:Tri.Dout
+Q[26] <= logic_tri:FF_Tri:26:Tri.Dout
+Q[27] <= logic_tri:FF_Tri:27:Tri.Dout
+Q[28] <= logic_tri:FF_Tri:28:Tri.Dout
+Q[29] <= logic_tri:FF_Tri:29:Tri.Dout
+Q[30] <= logic_tri:FF_Tri:30:Tri.Dout
+Q[31] <= logic_tri:FF_Tri:31:Tri.Dout
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:0:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:0:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:1:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:1:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:2:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:2:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:3:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:3:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:4:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:4:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:5:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:5:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:6:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:6:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:7:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:7:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:8:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:8:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:9:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:9:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:10:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:10:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:11:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:11:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:12:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:12:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:13:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:13:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:14:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:14:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:15:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:15:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:16:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:16:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:17:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:17:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:18:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:18:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:19:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:19:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:20:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:20:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:21:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:21:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:22:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:22:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:23:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:23:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:24:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:24:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:25:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:25:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:26:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:26:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:27:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:27:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:28:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:28:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:29:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:29:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:30:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:30:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|FF_D:\FF_Tri:31:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro5|logic_Tri:\FF_Tri:31:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6
+CLK => ff_d:FF_Tri:0:FF.CLK
+CLK => ff_d:FF_Tri:1:FF.CLK
+CLK => ff_d:FF_Tri:2:FF.CLK
+CLK => ff_d:FF_Tri:3:FF.CLK
+CLK => ff_d:FF_Tri:4:FF.CLK
+CLK => ff_d:FF_Tri:5:FF.CLK
+CLK => ff_d:FF_Tri:6:FF.CLK
+CLK => ff_d:FF_Tri:7:FF.CLK
+CLK => ff_d:FF_Tri:8:FF.CLK
+CLK => ff_d:FF_Tri:9:FF.CLK
+CLK => ff_d:FF_Tri:10:FF.CLK
+CLK => ff_d:FF_Tri:11:FF.CLK
+CLK => ff_d:FF_Tri:12:FF.CLK
+CLK => ff_d:FF_Tri:13:FF.CLK
+CLK => ff_d:FF_Tri:14:FF.CLK
+CLK => ff_d:FF_Tri:15:FF.CLK
+CLK => ff_d:FF_Tri:16:FF.CLK
+CLK => ff_d:FF_Tri:17:FF.CLK
+CLK => ff_d:FF_Tri:18:FF.CLK
+CLK => ff_d:FF_Tri:19:FF.CLK
+CLK => ff_d:FF_Tri:20:FF.CLK
+CLK => ff_d:FF_Tri:21:FF.CLK
+CLK => ff_d:FF_Tri:22:FF.CLK
+CLK => ff_d:FF_Tri:23:FF.CLK
+CLK => ff_d:FF_Tri:24:FF.CLK
+CLK => ff_d:FF_Tri:25:FF.CLK
+CLK => ff_d:FF_Tri:26:FF.CLK
+CLK => ff_d:FF_Tri:27:FF.CLK
+CLK => ff_d:FF_Tri:28:FF.CLK
+CLK => ff_d:FF_Tri:29:FF.CLK
+CLK => ff_d:FF_Tri:30:FF.CLK
+CLK => ff_d:FF_Tri:31:FF.CLK
+W => ff_d:FF_Tri:0:FF.W
+W => ff_d:FF_Tri:1:FF.W
+W => ff_d:FF_Tri:2:FF.W
+W => ff_d:FF_Tri:3:FF.W
+W => ff_d:FF_Tri:4:FF.W
+W => ff_d:FF_Tri:5:FF.W
+W => ff_d:FF_Tri:6:FF.W
+W => ff_d:FF_Tri:7:FF.W
+W => ff_d:FF_Tri:8:FF.W
+W => ff_d:FF_Tri:9:FF.W
+W => ff_d:FF_Tri:10:FF.W
+W => ff_d:FF_Tri:11:FF.W
+W => ff_d:FF_Tri:12:FF.W
+W => ff_d:FF_Tri:13:FF.W
+W => ff_d:FF_Tri:14:FF.W
+W => ff_d:FF_Tri:15:FF.W
+W => ff_d:FF_Tri:16:FF.W
+W => ff_d:FF_Tri:17:FF.W
+W => ff_d:FF_Tri:18:FF.W
+W => ff_d:FF_Tri:19:FF.W
+W => ff_d:FF_Tri:20:FF.W
+W => ff_d:FF_Tri:21:FF.W
+W => ff_d:FF_Tri:22:FF.W
+W => ff_d:FF_Tri:23:FF.W
+W => ff_d:FF_Tri:24:FF.W
+W => ff_d:FF_Tri:25:FF.W
+W => ff_d:FF_Tri:26:FF.W
+W => ff_d:FF_Tri:27:FF.W
+W => ff_d:FF_Tri:28:FF.W
+W => ff_d:FF_Tri:29:FF.W
+W => ff_d:FF_Tri:30:FF.W
+W => ff_d:FF_Tri:31:FF.W
+R => logic_tri:FF_Tri:0:Tri.R
+R => logic_tri:FF_Tri:1:Tri.R
+R => logic_tri:FF_Tri:2:Tri.R
+R => logic_tri:FF_Tri:3:Tri.R
+R => logic_tri:FF_Tri:4:Tri.R
+R => logic_tri:FF_Tri:5:Tri.R
+R => logic_tri:FF_Tri:6:Tri.R
+R => logic_tri:FF_Tri:7:Tri.R
+R => logic_tri:FF_Tri:8:Tri.R
+R => logic_tri:FF_Tri:9:Tri.R
+R => logic_tri:FF_Tri:10:Tri.R
+R => logic_tri:FF_Tri:11:Tri.R
+R => logic_tri:FF_Tri:12:Tri.R
+R => logic_tri:FF_Tri:13:Tri.R
+R => logic_tri:FF_Tri:14:Tri.R
+R => logic_tri:FF_Tri:15:Tri.R
+R => logic_tri:FF_Tri:16:Tri.R
+R => logic_tri:FF_Tri:17:Tri.R
+R => logic_tri:FF_Tri:18:Tri.R
+R => logic_tri:FF_Tri:19:Tri.R
+R => logic_tri:FF_Tri:20:Tri.R
+R => logic_tri:FF_Tri:21:Tri.R
+R => logic_tri:FF_Tri:22:Tri.R
+R => logic_tri:FF_Tri:23:Tri.R
+R => logic_tri:FF_Tri:24:Tri.R
+R => logic_tri:FF_Tri:25:Tri.R
+R => logic_tri:FF_Tri:26:Tri.R
+R => logic_tri:FF_Tri:27:Tri.R
+R => logic_tri:FF_Tri:28:Tri.R
+R => logic_tri:FF_Tri:29:Tri.R
+R => logic_tri:FF_Tri:30:Tri.R
+R => logic_tri:FF_Tri:31:Tri.R
+D[0] => ff_d:FF_Tri:0:FF.D
+D[1] => ff_d:FF_Tri:1:FF.D
+D[2] => ff_d:FF_Tri:2:FF.D
+D[3] => ff_d:FF_Tri:3:FF.D
+D[4] => ff_d:FF_Tri:4:FF.D
+D[5] => ff_d:FF_Tri:5:FF.D
+D[6] => ff_d:FF_Tri:6:FF.D
+D[7] => ff_d:FF_Tri:7:FF.D
+D[8] => ff_d:FF_Tri:8:FF.D
+D[9] => ff_d:FF_Tri:9:FF.D
+D[10] => ff_d:FF_Tri:10:FF.D
+D[11] => ff_d:FF_Tri:11:FF.D
+D[12] => ff_d:FF_Tri:12:FF.D
+D[13] => ff_d:FF_Tri:13:FF.D
+D[14] => ff_d:FF_Tri:14:FF.D
+D[15] => ff_d:FF_Tri:15:FF.D
+D[16] => ff_d:FF_Tri:16:FF.D
+D[17] => ff_d:FF_Tri:17:FF.D
+D[18] => ff_d:FF_Tri:18:FF.D
+D[19] => ff_d:FF_Tri:19:FF.D
+D[20] => ff_d:FF_Tri:20:FF.D
+D[21] => ff_d:FF_Tri:21:FF.D
+D[22] => ff_d:FF_Tri:22:FF.D
+D[23] => ff_d:FF_Tri:23:FF.D
+D[24] => ff_d:FF_Tri:24:FF.D
+D[25] => ff_d:FF_Tri:25:FF.D
+D[26] => ff_d:FF_Tri:26:FF.D
+D[27] => ff_d:FF_Tri:27:FF.D
+D[28] => ff_d:FF_Tri:28:FF.D
+D[29] => ff_d:FF_Tri:29:FF.D
+D[30] => ff_d:FF_Tri:30:FF.D
+D[31] => ff_d:FF_Tri:31:FF.D
+Q[0] <= logic_tri:FF_Tri:0:Tri.Dout
+Q[1] <= logic_tri:FF_Tri:1:Tri.Dout
+Q[2] <= logic_tri:FF_Tri:2:Tri.Dout
+Q[3] <= logic_tri:FF_Tri:3:Tri.Dout
+Q[4] <= logic_tri:FF_Tri:4:Tri.Dout
+Q[5] <= logic_tri:FF_Tri:5:Tri.Dout
+Q[6] <= logic_tri:FF_Tri:6:Tri.Dout
+Q[7] <= logic_tri:FF_Tri:7:Tri.Dout
+Q[8] <= logic_tri:FF_Tri:8:Tri.Dout
+Q[9] <= logic_tri:FF_Tri:9:Tri.Dout
+Q[10] <= logic_tri:FF_Tri:10:Tri.Dout
+Q[11] <= logic_tri:FF_Tri:11:Tri.Dout
+Q[12] <= logic_tri:FF_Tri:12:Tri.Dout
+Q[13] <= logic_tri:FF_Tri:13:Tri.Dout
+Q[14] <= logic_tri:FF_Tri:14:Tri.Dout
+Q[15] <= logic_tri:FF_Tri:15:Tri.Dout
+Q[16] <= logic_tri:FF_Tri:16:Tri.Dout
+Q[17] <= logic_tri:FF_Tri:17:Tri.Dout
+Q[18] <= logic_tri:FF_Tri:18:Tri.Dout
+Q[19] <= logic_tri:FF_Tri:19:Tri.Dout
+Q[20] <= logic_tri:FF_Tri:20:Tri.Dout
+Q[21] <= logic_tri:FF_Tri:21:Tri.Dout
+Q[22] <= logic_tri:FF_Tri:22:Tri.Dout
+Q[23] <= logic_tri:FF_Tri:23:Tri.Dout
+Q[24] <= logic_tri:FF_Tri:24:Tri.Dout
+Q[25] <= logic_tri:FF_Tri:25:Tri.Dout
+Q[26] <= logic_tri:FF_Tri:26:Tri.Dout
+Q[27] <= logic_tri:FF_Tri:27:Tri.Dout
+Q[28] <= logic_tri:FF_Tri:28:Tri.Dout
+Q[29] <= logic_tri:FF_Tri:29:Tri.Dout
+Q[30] <= logic_tri:FF_Tri:30:Tri.Dout
+Q[31] <= logic_tri:FF_Tri:31:Tri.Dout
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:0:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:0:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:1:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:1:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:2:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:2:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:3:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:3:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:4:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:4:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:5:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:5:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:6:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:6:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:7:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:7:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:8:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:8:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:9:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:9:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:10:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:10:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:11:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:11:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:12:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:12:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:13:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:13:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:14:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:14:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:15:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:15:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:16:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:16:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:17:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:17:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:18:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:18:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:19:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:19:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:20:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:20:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:21:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:21:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:22:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:22:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:23:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:23:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:24:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:24:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:25:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:25:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:26:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:26:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:27:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:27:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:28:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:28:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:29:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:29:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:30:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:30:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|FF_D:\FF_Tri:31:FF
+CLK => Q~reg0.CLK
+W => Q~reg0.ENA
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|FF_Tri_n:registro6|logic_Tri:\FF_Tri:31:Tri
+R => Dout.OE
+Din => Dout.DATAIN
+Dout <= Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|sum_res:sumador_restador
+control => muxn_2_1:muxn_2_1.control
+a[0] => sum_n:sumador.a[0]
+a[0] => res_n:restador.a[0]
+a[1] => sum_n:sumador.a[1]
+a[1] => res_n:restador.a[1]
+a[2] => sum_n:sumador.a[2]
+a[2] => res_n:restador.a[2]
+a[3] => sum_n:sumador.a[3]
+a[3] => res_n:restador.a[3]
+a[4] => sum_n:sumador.a[4]
+a[4] => res_n:restador.a[4]
+a[5] => sum_n:sumador.a[5]
+a[5] => res_n:restador.a[5]
+a[6] => sum_n:sumador.a[6]
+a[6] => res_n:restador.a[6]
+a[7] => sum_n:sumador.a[7]
+a[7] => res_n:restador.a[7]
+a[8] => sum_n:sumador.a[8]
+a[8] => res_n:restador.a[8]
+a[9] => sum_n:sumador.a[9]
+a[9] => res_n:restador.a[9]
+a[10] => sum_n:sumador.a[10]
+a[10] => res_n:restador.a[10]
+a[11] => sum_n:sumador.a[11]
+a[11] => res_n:restador.a[11]
+a[12] => sum_n:sumador.a[12]
+a[12] => res_n:restador.a[12]
+a[13] => sum_n:sumador.a[13]
+a[13] => res_n:restador.a[13]
+a[14] => sum_n:sumador.a[14]
+a[14] => res_n:restador.a[14]
+a[15] => sum_n:sumador.a[15]
+a[15] => res_n:restador.a[15]
+a[16] => sum_n:sumador.a[16]
+a[16] => res_n:restador.a[16]
+a[17] => sum_n:sumador.a[17]
+a[17] => res_n:restador.a[17]
+a[18] => sum_n:sumador.a[18]
+a[18] => res_n:restador.a[18]
+a[19] => sum_n:sumador.a[19]
+a[19] => res_n:restador.a[19]
+a[20] => sum_n:sumador.a[20]
+a[20] => res_n:restador.a[20]
+a[21] => sum_n:sumador.a[21]
+a[21] => res_n:restador.a[21]
+a[22] => sum_n:sumador.a[22]
+a[22] => res_n:restador.a[22]
+a[23] => sum_n:sumador.a[23]
+a[23] => res_n:restador.a[23]
+a[24] => sum_n:sumador.a[24]
+a[24] => res_n:restador.a[24]
+a[25] => sum_n:sumador.a[25]
+a[25] => res_n:restador.a[25]
+a[26] => sum_n:sumador.a[26]
+a[26] => res_n:restador.a[26]
+a[27] => sum_n:sumador.a[27]
+a[27] => res_n:restador.a[27]
+a[28] => sum_n:sumador.a[28]
+a[28] => res_n:restador.a[28]
+a[29] => sum_n:sumador.a[29]
+a[29] => res_n:restador.a[29]
+a[30] => sum_n:sumador.a[30]
+a[30] => res_n:restador.a[30]
+a[31] => sum_n:sumador.a[31]
+a[31] => res_n:restador.a[31]
+b[0] => sum_n:sumador.b[0]
+b[0] => res_n:restador.b[0]
+b[1] => sum_n:sumador.b[1]
+b[1] => res_n:restador.b[1]
+b[2] => sum_n:sumador.b[2]
+b[2] => res_n:restador.b[2]
+b[3] => sum_n:sumador.b[3]
+b[3] => res_n:restador.b[3]
+b[4] => sum_n:sumador.b[4]
+b[4] => res_n:restador.b[4]
+b[5] => sum_n:sumador.b[5]
+b[5] => res_n:restador.b[5]
+b[6] => sum_n:sumador.b[6]
+b[6] => res_n:restador.b[6]
+b[7] => sum_n:sumador.b[7]
+b[7] => res_n:restador.b[7]
+b[8] => sum_n:sumador.b[8]
+b[8] => res_n:restador.b[8]
+b[9] => sum_n:sumador.b[9]
+b[9] => res_n:restador.b[9]
+b[10] => sum_n:sumador.b[10]
+b[10] => res_n:restador.b[10]
+b[11] => sum_n:sumador.b[11]
+b[11] => res_n:restador.b[11]
+b[12] => sum_n:sumador.b[12]
+b[12] => res_n:restador.b[12]
+b[13] => sum_n:sumador.b[13]
+b[13] => res_n:restador.b[13]
+b[14] => sum_n:sumador.b[14]
+b[14] => res_n:restador.b[14]
+b[15] => sum_n:sumador.b[15]
+b[15] => res_n:restador.b[15]
+b[16] => sum_n:sumador.b[16]
+b[16] => res_n:restador.b[16]
+b[17] => sum_n:sumador.b[17]
+b[17] => res_n:restador.b[17]
+b[18] => sum_n:sumador.b[18]
+b[18] => res_n:restador.b[18]
+b[19] => sum_n:sumador.b[19]
+b[19] => res_n:restador.b[19]
+b[20] => sum_n:sumador.b[20]
+b[20] => res_n:restador.b[20]
+b[21] => sum_n:sumador.b[21]
+b[21] => res_n:restador.b[21]
+b[22] => sum_n:sumador.b[22]
+b[22] => res_n:restador.b[22]
+b[23] => sum_n:sumador.b[23]
+b[23] => res_n:restador.b[23]
+b[24] => sum_n:sumador.b[24]
+b[24] => res_n:restador.b[24]
+b[25] => sum_n:sumador.b[25]
+b[25] => res_n:restador.b[25]
+b[26] => sum_n:sumador.b[26]
+b[26] => res_n:restador.b[26]
+b[27] => sum_n:sumador.b[27]
+b[27] => res_n:restador.b[27]
+b[28] => sum_n:sumador.b[28]
+b[28] => res_n:restador.b[28]
+b[29] => sum_n:sumador.b[29]
+b[29] => res_n:restador.b[29]
+b[30] => sum_n:sumador.b[30]
+b[30] => res_n:restador.b[30]
+b[31] => sum_n:sumador.b[31]
+b[31] => res_n:restador.b[31]
+resultado[0] <= muxn_2_1:muxn_2_1.resultado[0]
+resultado[1] <= muxn_2_1:muxn_2_1.resultado[1]
+resultado[2] <= muxn_2_1:muxn_2_1.resultado[2]
+resultado[3] <= muxn_2_1:muxn_2_1.resultado[3]
+resultado[4] <= muxn_2_1:muxn_2_1.resultado[4]
+resultado[5] <= muxn_2_1:muxn_2_1.resultado[5]
+resultado[6] <= muxn_2_1:muxn_2_1.resultado[6]
+resultado[7] <= muxn_2_1:muxn_2_1.resultado[7]
+resultado[8] <= muxn_2_1:muxn_2_1.resultado[8]
+resultado[9] <= muxn_2_1:muxn_2_1.resultado[9]
+resultado[10] <= muxn_2_1:muxn_2_1.resultado[10]
+resultado[11] <= muxn_2_1:muxn_2_1.resultado[11]
+resultado[12] <= muxn_2_1:muxn_2_1.resultado[12]
+resultado[13] <= muxn_2_1:muxn_2_1.resultado[13]
+resultado[14] <= muxn_2_1:muxn_2_1.resultado[14]
+resultado[15] <= muxn_2_1:muxn_2_1.resultado[15]
+resultado[16] <= muxn_2_1:muxn_2_1.resultado[16]
+resultado[17] <= muxn_2_1:muxn_2_1.resultado[17]
+resultado[18] <= muxn_2_1:muxn_2_1.resultado[18]
+resultado[19] <= muxn_2_1:muxn_2_1.resultado[19]
+resultado[20] <= muxn_2_1:muxn_2_1.resultado[20]
+resultado[21] <= muxn_2_1:muxn_2_1.resultado[21]
+resultado[22] <= muxn_2_1:muxn_2_1.resultado[22]
+resultado[23] <= muxn_2_1:muxn_2_1.resultado[23]
+resultado[24] <= muxn_2_1:muxn_2_1.resultado[24]
+resultado[25] <= muxn_2_1:muxn_2_1.resultado[25]
+resultado[26] <= muxn_2_1:muxn_2_1.resultado[26]
+resultado[27] <= muxn_2_1:muxn_2_1.resultado[27]
+resultado[28] <= muxn_2_1:muxn_2_1.resultado[28]
+resultado[29] <= muxn_2_1:muxn_2_1.resultado[29]
+resultado[30] <= muxn_2_1:muxn_2_1.resultado[30]
+resultado[31] <= muxn_2_1:muxn_2_1.resultado[31]
+
+
+|proceso|datapath:datapa|sum_res:sumador_restador|sum_n:sumador
+a[0] => Add0.IN32
+a[1] => Add0.IN31
+a[2] => Add0.IN30
+a[3] => Add0.IN29
+a[4] => Add0.IN28
+a[5] => Add0.IN27
+a[6] => Add0.IN26
+a[7] => Add0.IN25
+a[8] => Add0.IN24
+a[9] => Add0.IN23
+a[10] => Add0.IN22
+a[11] => Add0.IN21
+a[12] => Add0.IN20
+a[13] => Add0.IN19
+a[14] => Add0.IN18
+a[15] => Add0.IN17
+a[16] => Add0.IN16
+a[17] => Add0.IN15
+a[18] => Add0.IN14
+a[19] => Add0.IN13
+a[20] => Add0.IN12
+a[21] => Add0.IN11
+a[22] => Add0.IN10
+a[23] => Add0.IN9
+a[24] => Add0.IN8
+a[25] => Add0.IN7
+a[26] => Add0.IN6
+a[27] => Add0.IN5
+a[28] => Add0.IN4
+a[29] => Add0.IN3
+a[30] => Add0.IN2
+a[31] => Add0.IN1
+b[0] => Add0.IN64
+b[1] => Add0.IN63
+b[2] => Add0.IN62
+b[3] => Add0.IN61
+b[4] => Add0.IN60
+b[5] => Add0.IN59
+b[6] => Add0.IN58
+b[7] => Add0.IN57
+b[8] => Add0.IN56
+b[9] => Add0.IN55
+b[10] => Add0.IN54
+b[11] => Add0.IN53
+b[12] => Add0.IN52
+b[13] => Add0.IN51
+b[14] => Add0.IN50
+b[15] => Add0.IN49
+b[16] => Add0.IN48
+b[17] => Add0.IN47
+b[18] => Add0.IN46
+b[19] => Add0.IN45
+b[20] => Add0.IN44
+b[21] => Add0.IN43
+b[22] => Add0.IN42
+b[23] => Add0.IN41
+b[24] => Add0.IN40
+b[25] => Add0.IN39
+b[26] => Add0.IN38
+b[27] => Add0.IN37
+b[28] => Add0.IN36
+b[29] => Add0.IN35
+b[30] => Add0.IN34
+b[31] => Add0.IN33
+sum[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[16] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[17] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[18] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[19] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[20] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[21] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[22] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[23] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[24] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[25] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[26] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[27] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+sum[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|sum_res:sumador_restador|res_n:restador
+a[0] => Add0.IN64
+a[1] => Add0.IN63
+a[2] => Add0.IN62
+a[3] => Add0.IN61
+a[4] => Add0.IN60
+a[5] => Add0.IN59
+a[6] => Add0.IN58
+a[7] => Add0.IN57
+a[8] => Add0.IN56
+a[9] => Add0.IN55
+a[10] => Add0.IN54
+a[11] => Add0.IN53
+a[12] => Add0.IN52
+a[13] => Add0.IN51
+a[14] => Add0.IN50
+a[15] => Add0.IN49
+a[16] => Add0.IN48
+a[17] => Add0.IN47
+a[18] => Add0.IN46
+a[19] => Add0.IN45
+a[20] => Add0.IN44
+a[21] => Add0.IN43
+a[22] => Add0.IN42
+a[23] => Add0.IN41
+a[24] => Add0.IN40
+a[25] => Add0.IN39
+a[26] => Add0.IN38
+a[27] => Add0.IN37
+a[28] => Add0.IN36
+a[29] => Add0.IN35
+a[30] => Add0.IN34
+a[31] => Add0.IN33
+b[0] => Add0.IN32
+b[1] => Add0.IN31
+b[2] => Add0.IN30
+b[3] => Add0.IN29
+b[4] => Add0.IN28
+b[5] => Add0.IN27
+b[6] => Add0.IN26
+b[7] => Add0.IN25
+b[8] => Add0.IN24
+b[9] => Add0.IN23
+b[10] => Add0.IN22
+b[11] => Add0.IN21
+b[12] => Add0.IN20
+b[13] => Add0.IN19
+b[14] => Add0.IN18
+b[15] => Add0.IN17
+b[16] => Add0.IN16
+b[17] => Add0.IN15
+b[18] => Add0.IN14
+b[19] => Add0.IN13
+b[20] => Add0.IN12
+b[21] => Add0.IN11
+b[22] => Add0.IN10
+b[23] => Add0.IN9
+b[24] => Add0.IN8
+b[25] => Add0.IN7
+b[26] => Add0.IN6
+b[27] => Add0.IN5
+b[28] => Add0.IN4
+b[29] => Add0.IN3
+b[30] => Add0.IN2
+b[31] => Add0.IN1
+res[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[16] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[17] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[18] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[19] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[20] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[21] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[22] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[23] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[24] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[25] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[26] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[27] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+res[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|datapath:datapa|sum_res:sumador_restador|muxn_2_1:muxn_2_1
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+control => resultado.OUTPUTSELECT
+a[0] => resultado.DATAB
+a[1] => resultado.DATAB
+a[2] => resultado.DATAB
+a[3] => resultado.DATAB
+a[4] => resultado.DATAB
+a[5] => resultado.DATAB
+a[6] => resultado.DATAB
+a[7] => resultado.DATAB
+a[8] => resultado.DATAB
+a[9] => resultado.DATAB
+a[10] => resultado.DATAB
+a[11] => resultado.DATAB
+a[12] => resultado.DATAB
+a[13] => resultado.DATAB
+a[14] => resultado.DATAB
+a[15] => resultado.DATAB
+a[16] => resultado.DATAB
+a[17] => resultado.DATAB
+a[18] => resultado.DATAB
+a[19] => resultado.DATAB
+a[20] => resultado.DATAB
+a[21] => resultado.DATAB
+a[22] => resultado.DATAB
+a[23] => resultado.DATAB
+a[24] => resultado.DATAB
+a[25] => resultado.DATAB
+a[26] => resultado.DATAB
+a[27] => resultado.DATAB
+a[28] => resultado.DATAB
+a[29] => resultado.DATAB
+a[30] => resultado.DATAB
+a[31] => resultado.DATAB
+b[0] => resultado.DATAA
+b[1] => resultado.DATAA
+b[2] => resultado.DATAA
+b[3] => resultado.DATAA
+b[4] => resultado.DATAA
+b[5] => resultado.DATAA
+b[6] => resultado.DATAA
+b[7] => resultado.DATAA
+b[8] => resultado.DATAA
+b[9] => resultado.DATAA
+b[10] => resultado.DATAA
+b[11] => resultado.DATAA
+b[12] => resultado.DATAA
+b[13] => resultado.DATAA
+b[14] => resultado.DATAA
+b[15] => resultado.DATAA
+b[16] => resultado.DATAA
+b[17] => resultado.DATAA
+b[18] => resultado.DATAA
+b[19] => resultado.DATAA
+b[20] => resultado.DATAA
+b[21] => resultado.DATAA
+b[22] => resultado.DATAA
+b[23] => resultado.DATAA
+b[24] => resultado.DATAA
+b[25] => resultado.DATAA
+b[26] => resultado.DATAA
+b[27] => resultado.DATAA
+b[28] => resultado.DATAA
+b[29] => resultado.DATAA
+b[30] => resultado.DATAA
+b[31] => resultado.DATAA
+resultado[0] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[1] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[2] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[3] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[4] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[5] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[6] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[7] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[8] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[9] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[10] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[11] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[12] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[13] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[14] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[15] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[16] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[17] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[18] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[19] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[20] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[21] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[22] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[23] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[24] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[25] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[26] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[27] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[28] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[29] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[30] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+resultado[31] <= resultado.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proceso|control:con
+CLK => PS~1.DATAIN
+c <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+W[1] <= W[1].DB_MAX_OUTPUT_PORT_TYPE
+W[2] <= W[2].DB_MAX_OUTPUT_PORT_TYPE
+W[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+W[4] <= W.DB_MAX_OUTPUT_PORT_TYPE
+W[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+W[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= R[1].DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+R[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+R[5] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+R[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
