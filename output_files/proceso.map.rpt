@@ -1,5 +1,5 @@
 Analysis & Synthesis report for proceso
-Sat Mar 02 18:46:43 2024
+Sat Mar 02 21:53:29 2024
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 02 18:46:43 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 02 21:53:29 2024       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; proceso                                     ;
 ; Top-level Entity Name              ; proceso                                     ;
@@ -178,22 +178,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
-; res_n.vhd                        ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/res_n.vhd     ;         ;
-; sum_n.vhd                        ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/sum_n.vhd     ;         ;
-; muxn_2_1.vhd                     ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/muxn_2_1.vhd  ;         ;
-; sum_res.vhd                      ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/sum_res.vhd   ;         ;
-; FF_D.vhd                         ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/FF_D.vhd      ;         ;
-; logic_Tri.vhd                    ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd ;         ;
-; FF_Tri_n.vhd                     ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/FF_Tri_n.vhd  ;         ;
-; datapath.vhd                     ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/datapath.vhd  ;         ;
-; control.vhd                      ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/control.vhd   ;         ;
-; proceso.vhd                      ; yes             ; User VHDL File  ; E:/QUARTUS19/hardware_design/lab1/proceso.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------+---------+
+; res_n.vhd                        ; yes             ; User VHDL File  ; E:/git/lab1/res_n.vhd        ;         ;
+; sum_n.vhd                        ; yes             ; User VHDL File  ; E:/git/lab1/sum_n.vhd        ;         ;
+; muxn_2_1.vhd                     ; yes             ; User VHDL File  ; E:/git/lab1/muxn_2_1.vhd     ;         ;
+; sum_res.vhd                      ; yes             ; User VHDL File  ; E:/git/lab1/sum_res.vhd      ;         ;
+; FF_D.vhd                         ; yes             ; User VHDL File  ; E:/git/lab1/FF_D.vhd         ;         ;
+; logic_Tri.vhd                    ; yes             ; User VHDL File  ; E:/git/lab1/logic_Tri.vhd    ;         ;
+; FF_Tri_n.vhd                     ; yes             ; User VHDL File  ; E:/git/lab1/FF_Tri_n.vhd     ;         ;
+; datapath.vhd                     ; yes             ; User VHDL File  ; E:/git/lab1/datapath.vhd     ;         ;
+; control.vhd                      ; yes             ; User VHDL File  ; E:/git/lab1/control.vhd      ;         ;
+; proceso.vhd                      ; yes             ; User VHDL File  ; E:/git/lab1/proceso.vhd      ;         ;
++----------------------------------+-----------------+-----------------+------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -643,147 +643,147 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Mar 02 18:46:35 2024
+    Info: Processing started: Sat Mar 02 21:53:20 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proceso -c proceso
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file res_n.vhd
-    Info (12022): Found design unit 1: res_n-flow File: E:/QUARTUS19/hardware_design/lab1/res_n.vhd Line: 15
-    Info (12023): Found entity 1: res_n File: E:/QUARTUS19/hardware_design/lab1/res_n.vhd Line: 5
+    Info (12022): Found design unit 1: res_n-flow File: E:/git/lab1/res_n.vhd Line: 15
+    Info (12023): Found entity 1: res_n File: E:/git/lab1/res_n.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file sum_n.vhd
-    Info (12022): Found design unit 1: sum_n-flow File: E:/QUARTUS19/hardware_design/lab1/sum_n.vhd Line: 15
-    Info (12023): Found entity 1: sum_n File: E:/QUARTUS19/hardware_design/lab1/sum_n.vhd Line: 5
+    Info (12022): Found design unit 1: sum_n-flow File: E:/git/lab1/sum_n.vhd Line: 15
+    Info (12023): Found entity 1: sum_n File: E:/git/lab1/sum_n.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxn_2_1.vhd
-    Info (12022): Found design unit 1: muxn_2_1-flow File: E:/QUARTUS19/hardware_design/lab1/muxn_2_1.vhd Line: 15
-    Info (12023): Found entity 1: muxn_2_1 File: E:/QUARTUS19/hardware_design/lab1/muxn_2_1.vhd Line: 4
+    Info (12022): Found design unit 1: muxn_2_1-flow File: E:/git/lab1/muxn_2_1.vhd Line: 15
+    Info (12023): Found entity 1: muxn_2_1 File: E:/git/lab1/muxn_2_1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sum_res.vhd
-    Info (12022): Found design unit 1: sum_res-struct File: E:/QUARTUS19/hardware_design/lab1/sum_res.vhd Line: 15
-    Info (12023): Found entity 1: sum_res File: E:/QUARTUS19/hardware_design/lab1/sum_res.vhd Line: 4
+    Info (12022): Found design unit 1: sum_res-struct File: E:/git/lab1/sum_res.vhd Line: 15
+    Info (12023): Found entity 1: sum_res File: E:/git/lab1/sum_res.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ff_d.vhd
-    Info (12022): Found design unit 1: FF_D-beh File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 12
-    Info (12023): Found entity 1: FF_D File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 4
+    Info (12022): Found design unit 1: FF_D-beh File: E:/git/lab1/FF_D.vhd Line: 12
+    Info (12023): Found entity 1: FF_D File: E:/git/lab1/FF_D.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logic_tri.vhd
-    Info (12022): Found design unit 1: logic_Tri-flow File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 12
-    Info (12023): Found entity 1: logic_Tri File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 4
+    Info (12022): Found design unit 1: logic_Tri-flow File: E:/git/lab1/logic_Tri.vhd Line: 12
+    Info (12023): Found entity 1: logic_Tri File: E:/git/lab1/logic_Tri.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ff_tri_n.vhd
-    Info (12022): Found design unit 1: FF_Tri_n-struct File: E:/QUARTUS19/hardware_design/lab1/FF_Tri_n.vhd Line: 15
-    Info (12023): Found entity 1: FF_Tri_n File: E:/QUARTUS19/hardware_design/lab1/FF_Tri_n.vhd Line: 4
+    Info (12022): Found design unit 1: FF_Tri_n-struct File: E:/git/lab1/FF_Tri_n.vhd Line: 15
+    Info (12023): Found entity 1: FF_Tri_n File: E:/git/lab1/FF_Tri_n.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: datapath-struct File: E:/QUARTUS19/hardware_design/lab1/datapath.vhd Line: 16
-    Info (12023): Found entity 1: datapath File: E:/QUARTUS19/hardware_design/lab1/datapath.vhd Line: 4
+    Info (12022): Found design unit 1: datapath-struct File: E:/git/lab1/datapath.vhd Line: 16
+    Info (12023): Found entity 1: datapath File: E:/git/lab1/datapath.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
-    Info (12022): Found design unit 1: control-beh File: E:/QUARTUS19/hardware_design/lab1/control.vhd Line: 12
-    Info (12023): Found entity 1: control File: E:/QUARTUS19/hardware_design/lab1/control.vhd Line: 4
+    Info (12022): Found design unit 1: control-beh File: E:/git/lab1/control.vhd Line: 12
+    Info (12023): Found entity 1: control File: E:/git/lab1/control.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file proceso.vhd
-    Info (12022): Found design unit 1: proceso-struct File: E:/QUARTUS19/hardware_design/lab1/proceso.vhd Line: 15
-    Info (12023): Found entity 1: proceso File: E:/QUARTUS19/hardware_design/lab1/proceso.vhd Line: 4
+    Info (12022): Found design unit 1: proceso-struct File: E:/git/lab1/proceso.vhd Line: 15
+    Info (12023): Found entity 1: proceso File: E:/git/lab1/proceso.vhd Line: 4
 Info (12127): Elaborating entity "proceso" for the top level hierarchy
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapa" File: E:/QUARTUS19/hardware_design/lab1/proceso.vhd Line: 19
-Info (12128): Elaborating entity "FF_Tri_n" for hierarchy "datapath:datapa|FF_Tri_n:registro1" File: E:/QUARTUS19/hardware_design/lab1/datapath.vhd Line: 19
-Info (12128): Elaborating entity "FF_D" for hierarchy "datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:0:FF" File: E:/QUARTUS19/hardware_design/lab1/FF_Tri_n.vhd Line: 19
-Info (12128): Elaborating entity "logic_Tri" for hierarchy "datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:0:Tri" File: E:/QUARTUS19/hardware_design/lab1/FF_Tri_n.vhd Line: 20
-Info (12128): Elaborating entity "sum_res" for hierarchy "datapath:datapa|sum_res:sumador_restador" File: E:/QUARTUS19/hardware_design/lab1/datapath.vhd Line: 26
-Info (12128): Elaborating entity "sum_n" for hierarchy "datapath:datapa|sum_res:sumador_restador|sum_n:sumador" File: E:/QUARTUS19/hardware_design/lab1/sum_res.vhd Line: 18
-Info (12128): Elaborating entity "res_n" for hierarchy "datapath:datapa|sum_res:sumador_restador|res_n:restador" File: E:/QUARTUS19/hardware_design/lab1/sum_res.vhd Line: 19
-Info (12128): Elaborating entity "muxn_2_1" for hierarchy "datapath:datapa|sum_res:sumador_restador|muxn_2_1:muxn_2_1" File: E:/QUARTUS19/hardware_design/lab1/sum_res.vhd Line: 20
-Info (12128): Elaborating entity "control" for hierarchy "control:con" File: E:/QUARTUS19/hardware_design/lab1/proceso.vhd Line: 20
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:datapa" File: E:/git/lab1/proceso.vhd Line: 19
+Info (12128): Elaborating entity "FF_Tri_n" for hierarchy "datapath:datapa|FF_Tri_n:registro1" File: E:/git/lab1/datapath.vhd Line: 19
+Info (12128): Elaborating entity "FF_D" for hierarchy "datapath:datapa|FF_Tri_n:registro1|FF_D:\FF_Tri:0:FF" File: E:/git/lab1/FF_Tri_n.vhd Line: 19
+Info (12128): Elaborating entity "logic_Tri" for hierarchy "datapath:datapa|FF_Tri_n:registro1|logic_Tri:\FF_Tri:0:Tri" File: E:/git/lab1/FF_Tri_n.vhd Line: 20
+Info (12128): Elaborating entity "sum_res" for hierarchy "datapath:datapa|sum_res:sumador_restador" File: E:/git/lab1/datapath.vhd Line: 26
+Info (12128): Elaborating entity "sum_n" for hierarchy "datapath:datapa|sum_res:sumador_restador|sum_n:sumador" File: E:/git/lab1/sum_res.vhd Line: 18
+Info (12128): Elaborating entity "res_n" for hierarchy "datapath:datapa|sum_res:sumador_restador|res_n:restador" File: E:/git/lab1/sum_res.vhd Line: 19
+Info (12128): Elaborating entity "muxn_2_1" for hierarchy "datapath:datapa|sum_res:sumador_restador|muxn_2_1:muxn_2_1" File: E:/git/lab1/sum_res.vhd Line: 20
+Info (12128): Elaborating entity "control" for hierarchy "control:con" File: E:/git/lab1/proceso.vhd Line: 20
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[32]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[31]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[30]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[29]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[28]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[27]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[26]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[25]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[24]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[23]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[22]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[21]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[20]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[19]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[18]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[17]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[16]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[15]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[14]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[13]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[12]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[11]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[10]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[9]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[8]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[7]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[6]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[5]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[4]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[3]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[2]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13048): Converted tri-state node "datapath:datapa|databus[1]" into a selector File: E:/QUARTUS19/hardware_design/lab1/FF_D.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:31:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:30:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:29:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:28:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:27:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:26:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:25:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:24:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:23:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:22:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:21:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:20:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:19:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:18:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:17:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:16:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:15:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:14:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:13:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:12:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:11:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:10:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:9:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:8:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:7:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:6:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:5:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:4:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:3:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:2:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:1:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:0:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:31:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:30:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:29:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:28:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:27:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:26:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:25:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:24:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:23:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:22:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:21:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:20:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:19:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:18:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:17:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:16:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:15:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:14:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:13:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:12:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:11:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:10:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:9:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:8:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:7:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:6:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:5:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:4:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:3:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:2:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:1:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
-    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:0:Tri|Dout" feeding internal logic into a wire File: E:/QUARTUS19/hardware_design/lab1/logic_Tri.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[32]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[31]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[30]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[29]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[28]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[27]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[26]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[25]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[24]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[23]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[22]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[21]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[20]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[19]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[18]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[17]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[16]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[15]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[14]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[13]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[12]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[11]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[10]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[9]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[8]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[7]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[6]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[5]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[4]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[3]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[2]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13048): Converted tri-state node "datapath:datapa|databus[1]" into a selector File: E:/git/lab1/FF_D.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:31:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:30:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:29:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:28:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:27:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:26:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:25:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:24:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:23:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:22:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:21:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:20:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:19:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:18:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:17:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:16:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:15:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:14:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:13:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:12:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:11:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:10:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:9:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:8:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:7:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:6:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:5:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:4:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:3:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:2:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:1:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro4|logic_Tri:\FF_Tri:0:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:31:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:30:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:29:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:28:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:27:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:26:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:25:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:24:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:23:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:22:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:21:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:20:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:19:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:18:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:17:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:16:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:15:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:14:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:13:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:12:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:11:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:10:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:9:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:8:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:7:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:6:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:5:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:4:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:3:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:2:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:1:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
+    Warning (13049): Converted tri-state buffer "datapath:datapa|FF_Tri_n:registro3|logic_Tri:\FF_Tri:0:Tri|Dout" feeding internal logic into a wire File: E:/git/lab1/logic_Tri.vhd Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -792,9 +792,9 @@ Info (21057): Implemented 402 device resources after synthesis - the final resou
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 305 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 98 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Sat Mar 02 18:46:43 2024
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Sat Mar 02 21:53:29 2024
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:16
 
 
